@@ -15,8 +15,8 @@ $
 
 # Command Line History (newest to oldest):
 :x
-:w
 :q!
+:w
 :$
 :set nonu
 :1
@@ -236,28 +236,33 @@ $
 	/
 
 # File marks:
-'0  7  0  ~/.pushmyconf.sh
-'1  8  0  ~/.pushmyconf.sh
-'2  1  0  ~/pushmyconf.shx
-'3  2  0  ~/pushmyconf.sh
-'4  4  0  ~/.vimrc
-'5  11  0  ~/code/mygithub/simple/locks/rwspinlock.h
-'6  1  9  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
-'7  181  10  ~/code/gperftools-2.0/src/malloc_hook.cc
-'8  146  1  ~/code/gperftools-2.0/src/symbolize.cc
-'9  182  4  ~/code/gperftools-2.0/src/symbolize.cc
+'0  2  0  ~/test.cpp
+'1  1  0  ~/.vimrc
+'2  3  3  ~/test.cpp
+'3  11  40  ~/.vimrc
+'4  6  0  ~/.vimrc
+'5  4  0  ~/.vimrc
+'6  7  0  ~/.pushmyconf.sh
+'7  8  0  ~/.pushmyconf.sh
+'8  1  0  ~/pushmyconf.shx
+'9  2  0  ~/pushmyconf.sh
 
 # Jumplist (newest first):
+-'  2  0  ~/test.cpp
+-'  1  0  ~/test.cpp
+-'  1  0  ~/.vimrc
+-'  3  3  ~/test.cpp
+-'  11  40  ~/.vimrc
+-'  6  0  ~/.vimrc
+-'  4  0  ~/.vimrc
 -'  7  0  ~/.pushmyconf.sh
 -'  1  0  ~/.pushmyconf.sh
 -'  8  0  ~/.pushmyconf.sh
 -'  1  0  ~/pushmyconf.shx
 -'  2  0  ~/pushmyconf.sh
 -'  1  0  ~/pushmyconf.sh
--'  4  0  ~/.vimrc
--'  9  0  ~/.vimrc
--'  8  0  ~/.vimrc
--'  1  0  ~/.vimrc
+-'  16  0  ~/.vimrc
+-'  15  0  ~/.vimrc
 -'  11  0  ~/code/mygithub/simple/locks/rwspinlock.h
 -'  1  0  ~/code/mygithub/simple/locks/rwspinlock.h
 -'  1  9  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
@@ -310,26 +315,26 @@ $
 -'  88  15  /usr/share/vim-scripts/doc/omnicppcomplete.txt
 -'  2  0  /usr/share/vim-scripts/doc/omnicppcomplete.txt
 -'  1  0  /usr/share/vim-scripts/doc/omnicppcomplete.txt
--'  31  0  ~/.vimrc
+-'  38  0  ~/.vimrc
 -'  8  72  ~/code/mygithub/simple/tags
 -'  1  0  ~/code/mygithub/simple/tags
 -'  23  5  ~/code/mygithub/simple/locks/rwspinlock.h
 -'  8  1  ~/code
--'  51  0  ~/.vimrc
+-'  58  0  ~/.vimrc
 -'  20  5  ~/code/mygithub/simple/locks/rwspinlock.h
 -'  24  0  ~/code/mygithub/simple/locks/rwspinlock.h
 -'  3  0  ~/code/mygithub/simple/locks/rwspinlock.h
 -'  15  1  ~/code/mygithub/simple/locks/rwspinlock.h
--'  22  24  ~/.vimrc
+-'  29  24  ~/.vimrc
 -'  2  67  ~/.vimrc
--'  36  19  ~/.vimrc
+-'  43  19  ~/.vimrc
 -'  3  15  ~/.vimrc
--'  18  0  ~/.vimrc
--'  5  0  ~/.vimrc
--'  48  0  ~/.vimrc
--'  29  30  ~/.vimrc
+-'  25  0  ~/.vimrc
+-'  12  0  ~/.vimrc
+-'  55  0  ~/.vimrc
+-'  36  30  ~/.vimrc
 -'  12  0  ~/code/mygithub/simple/locks/rwspinlock.h
--'  23  25  ~/.vimrc
+-'  30  25  ~/.vimrc
 -'  2  0  /usr/include/c++/4.6/cpp
 -'  1  0  /usr/include/c++/4.6/cpp
 -'  1  0  ~/.vim/ctags/cpp
@@ -338,16 +343,106 @@ $
 -'  93  46  ~/code/workspace/simple/locks/locks.mk
 -'  91  46  ~/code/workspace/simple/locks/locks.mk
 -'  97  140  ~/code/workspace/simple/locks/locks.mk
--'  4  0  ~/.vimrc
--'  9  0  ~/.vimrc
--'  8  0  ~/.vimrc
--'  1  0  ~/.vimrc
 -'  11  0  ~/code/mygithub/simple/locks/rwspinlock.h
 -'  1  0  ~/code/mygithub/simple/locks/rwspinlock.h
 -'  1  9  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
--'  181  10  ~/code/gperftools-2.0/src/malloc_hook.cc
 
 # History of marks within files (newest to oldest):
+
+> ~/test.cpp
+	"	2	0
+	^	2	1
+	.	2	3
+	+	3	3
+	+	1	12
+	+	2	3
+
+> ~/.vimrc
+	"	1	0
+	^	11	41
+	.	11	42
+	+	1	20
+	+	21	9
+	+	21	0
+	+	1	1
+	+	21	34
+	+	21	0
+	+	21	0
+	+	21	23
+	+	21	29
+	+	21	22
+	+	21	0
+	+	21	0
+	+	21	13
+	+	21	13
+	+	21	38
+	+	21	31
+	+	21	35
+	+	21	26
+	+	1	0
+	+	1	0
+	+	21	12
+	+	1	0
+	+	12	0
+	+	13	0
+	+	12	0
+	+	12	0
+	+	3	0
+	+	3	0
+	+	21	17
+	+	21	17
+	+	21	17
+	+	21	17
+	+	21	0
+	+	21	0
+	+	21	23
+	+	21	0
+	+	1	10
+	+	21	0
+	+	21	0
+	+	21	0
+	+	21	0
+	+	21	0
+	+	21	0
+	+	21	0
+	+	21	0
+	+	1	0
+	+	3	0
+	+	12	0
+	+	16	0
+	+	21	0
+	+	21	0
+	+	21	20
+	+	21	0
+	+	1	0
+	+	3	16
+	+	2	7
+	+	21	68
+	+	21	0
+	+	21	5
+	+	21	15
+	+	21	0
+	+	21	0
+	+	21	0
+	+	21	0
+	+	21	0
+	+	21	0
+	+	21	0
+	+	16	0
+	+	16	0
+	+	16	0
+	+	17	0
+	+	21	0
+	+	19	0
+	+	21	0
+	+	1	0
+	+	16	0
+	+	15	0
+	+	16	0
+	+	18	0
+	+	12	0
+	+	5	13
+	+	11	42
 
 > ~/.pushmyconf.sh
 	"	7	0
@@ -366,90 +461,6 @@ $
 	^	2	0
 	.	1	12
 	+	1	12
-
-> ~/.vimrc
-	"	4	0
-	.	5	0
-	+	1	20
-	+	14	9
-	+	14	0
-	+	1	1
-	+	14	34
-	+	14	0
-	+	14	0
-	+	14	23
-	+	14	29
-	+	14	22
-	+	14	0
-	+	14	0
-	+	14	13
-	+	14	13
-	+	14	38
-	+	14	31
-	+	14	35
-	+	14	26
-	+	1	0
-	+	1	0
-	+	14	12
-	+	1	0
-	+	5	0
-	+	6	0
-	+	5	0
-	+	5	0
-	+	3	0
-	+	3	0
-	+	14	17
-	+	14	17
-	+	14	17
-	+	14	17
-	+	14	0
-	+	14	0
-	+	14	23
-	+	14	0
-	+	1	10
-	+	14	0
-	+	14	0
-	+	14	0
-	+	14	0
-	+	14	0
-	+	14	0
-	+	14	0
-	+	14	0
-	+	1	0
-	+	3	0
-	+	5	0
-	+	9	0
-	+	14	0
-	+	14	0
-	+	14	20
-	+	14	0
-	+	1	0
-	+	3	16
-	+	2	7
-	+	14	68
-	+	14	0
-	+	14	5
-	+	14	15
-	+	14	0
-	+	14	0
-	+	14	0
-	+	14	0
-	+	14	0
-	+	14	0
-	+	14	0
-	+	9	0
-	+	9	0
-	+	9	0
-	+	10	0
-	+	14	0
-	+	12	0
-	+	14	0
-	+	1	0
-	+	9	0
-	+	8	0
-	+	9	0
-	+	11	0
-	+	5	0
 
 > ~/code/mygithub/simple/locks/rwspinlock.h
 	"	11	0
