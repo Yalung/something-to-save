@@ -3,3 +3,12 @@
 [user]
 	email = yalung929@gmail.com
 	name = yalung
+
+[sendemail]
+        smtpencryption = tls 
+        smtpuser  = yalung929@gmail.com 
+        smtpserverport = 587 
+        smtpserver = smtp.gmail.com 
+#        to = user@example.com
+#        cc = user@example.com
+#        from = user@example.com

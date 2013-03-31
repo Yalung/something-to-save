@@ -8,22 +8,51 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/root
+~MSle0~/main.cpp
+
+# Last Substitute String:
+$
 
 # Command Line History (newest to oldest):
 :x
-:q!
 :w
+:q!
 :$
 :set nonu
-:nu off
-:set nu
-:unset nu
 :1
+:tselect RWSpinLock
+:set tags+=./tags
+:X
+:tselect simple
+:tselect RWSpinlock
+:tselect list
+:tselect vector
+:!touch 123
+:touch 123
+:!ls
+:!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .
+:Q!
+:4
+:1,$d
 
 # Search String History (newest to oldest):
+?/main.cpp
+?/lock
+?/Target
+?/target
+?/gcc
+?/-o
+?/makedir
+?/ctags
+?/CTRL
+?/F12
+?/dir
+?/autodir
 ?/root
 ?/UUID
+? ^\s*$
+?/Prere
+?/vector
 
 # Expression History (newest to oldest):
 
@@ -32,139 +61,688 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
-	
+"0	LINE	0
+	nmap ,cf :em 
+	nmap ,cgf :em 
+	nmap ,cgm :em 
+	nmap ,cgae :em 
+	nmap ,cgad :em 
+	nmap ,cgtb :em 
+	nmap ,cgtd :em 
+	nmap ,cgdo :em 
+	nmap ,cgdd :em 
+	nmap ,cgda :em 
+	nmap ,cgdn :em 
+	nmap ,cgds :em 
+	nmap ,cgqe :em 
+	nmap ,cgqd :em 
+	nmap ,cgqo :em 
+	nmap ,cgqh :em 
+	nmap ,cgoos :em 
+	nmap ,cgool :em 
+	nmap ,cgoot :em 
+	nmap ,cgoob :em 
+	nmap ,cgob :em 
+	nmap ,cgon :em 
+	nmap ,cgoa :em 
+	nmap ,cgoc :em 
+	nmap ,cgof :em 
+	nmap ,cgos :em 
+	nmap ,cgou :em 
+	nmap ,cgii :em 
+	nmap ,cgid :em 
+	nmap ,cgih :em 
+	nmap ,cgip :em 
+	nmap ,cka :em 
+	nmap ,ckd :em 
+	nmap ,ckh :em 
+	nmap ,cki :em 
+	nmap ,ckn :em 
+	nmap ,ckk :em 
+	nmap ,ckl :em 
+	nmap ,ckf :em 
+	nmap ,ckr :em 
+	nmap ,cks :em 
+	nmap ,ckt :em 
+	nmap ,cyl :em 
+	nmap ,cys :em 
+	nmap ,cyh :em 
+	nmap ,cyc :em 
+	nmap ,cyq :em 
+	nmap ,cyu :em 
+	nmap ,cya :em 
+	nmap ,cyi :em 
+"1	LINE	0
+	" set UTF-8 encoding
 "2	LINE	0
-	endif
+	" highlight matching braces
 "3	LINE	0
-	  map <M-Up> [s
+	autocmd FileType cpp,h,c,py set expandtab        " expand tabs to spaces
 "4	LINE	0
-	  map <M-Down> ]s
+	set shiftwidth=4     " indent also with 4 spaces
 "5	LINE	0
-	  set spellfile=~/.vim/spellfile.add
+	set tabstop=4        " tab width is 4 spaces
 "6	LINE	0
-	  " set the spellfile - folders must exist
+	" disable vi compatibility (emulation of old bugs)
 "7	LINE	0
-	  :setlocal spell spelllang=en
+	" disable vi compatibility (emulation of old bugs)
 "8	LINE	0
-	  " spell settings
+	set tabstop=4        " tab width is 4 spaces
 "9	LINE	0
-	else
-"-	CHAR	0
-	5
+	set nocompatible
+"k	LINE	0
+	nmap ,cf :em 
+	nmap ,cgf :em 
+	nmap ,cgm :em 
+	nmap ,cgae :em 
+	nmap ,cgad :em 
+	nmap ,cgtb :em 
+	nmap ,cgtd :em 
+	nmap ,cgdo :em 
+	nmap ,cgdd :em 
+	nmap ,cgda :em 
+	nmap ,cgdn :em 
+	nmap ,cgds :em 
+	nmap ,cgqe :em 
+	nmap ,cgqd :em 
+	nmap ,cgqo :em 
+	nmap ,cgqh :em 
+	nmap ,cgoos :em 
+	nmap ,cgool :em 
+	nmap ,cgoot :em 
+	nmap ,cgoob :em 
+	nmap ,cgob :em 
+	nmap ,cgon :em 
+	nmap ,cgoa :em 
+	nmap ,cgoc :em 
+	nmap ,cgof :em 
+	nmap ,cgos :em 
+	nmap ,cgou :em 
+	nmap ,cgii :em 
+	nmap ,cgid :em 
+	nmap ,cgih :em 
+	nmap ,cgip :em 
+	nmap ,cka :em 
+	nmap ,ckd :em 
+	nmap ,ckh :em 
+	nmap ,cki :em 
+	nmap ,ckn :em 
+	nmap ,ckk :em 
+	nmap ,ckl :em 
+	nmap ,ckf :em 
+	nmap ,ckr :em 
+	nmap ,cks :em 
+	nmap ,ckt :em 
+	nmap ,cyl :em 
+	nmap ,cys :em 
+	nmap ,cyh :em 
+	nmap ,cyc :em 
+	nmap ,cyq :em 
+	nmap ,cyu :em 
+	nmap ,cya :em 
+	nmap ,cyi :em 
+"m	LINE	0
+	&CVS.In&fo\ 
+	&CVS.Settin&gs\ .In&fo\ (buffer)\ 
+	&CVS.Settin&gs\ .Show\ &mappings\ 
+	&CVS.Settin&gs\ .&Autocheck\ .&Enable\ 
+	&CVS.Settin&gs\ .&Autocheck\ .&Disable\ 
+	&CVS.Settin&gs\ .&Target\ .File\ in\ &buffer\ 
+	&CVS.Settin&gs\ .&Target\ .&Directory\ 
+	&CVS.Settin&gs\ .&Diff\ .Stay\ in\ &original\ 
+	&CVS.Settin&gs\ .&Diff\ .Switch\ to\ &diffed\ 
+	&CVS.Settin&gs\ .&Diff\ .&Autorestore\ prev\.mode\ 
+	&CVS.Settin&gs\ .&Diff\ .&No\ autorestore\ 
+	&CVS.Settin&gs\ .&Diff\ .Re&store\ pre-diff\ mode\ 
+	&CVS.Settin&gs\ .Revision\ &queries\ .&Enable\ 
+	&CVS.Settin&gs\ .Revision\ &queries\ .&Disable\ 
+	&CVS.Settin&gs\ .Revision\ &queries\ .&Offer\ current\ rev\ 
+	&CVS.Settin&gs\ .Revision\ &queries\ .&Hide\ current\ rev\ 
+	&CVS.Settin&gs\ .&Output\ .N&otifcation.Enable\ &statusline\ 
+	&CVS.Settin&gs\ .&Output\ .N&otifcation.Disable\ status&line\ 
+	&CVS.Settin&gs\ .&Output\ .N&otifcation.Enable\ &titlebar\ 
+	&CVS.Settin&gs\ .&Output\ .N&otifcation.Disable\ title&bar\ 
+	&CVS.Settin&gs\ .&Output\ .To\ new\ &buffer\ 
+	&CVS.Settin&gs\ .&Output\ .&Notify\ only\ 
+	&CVS.Settin&gs\ .&Output\ .&Autoswitch\ 
+	&CVS.Settin&gs\ .&Output\ .&Compressed\ 
+	&CVS.Settin&gs\ .&Output\ .&Full\ 
+	&CVS.Settin&gs\ .&Output\ .&Sorted\ 
+	&CVS.Settin&gs\ .&Output\ .&Unsorted\ 
+	&CVS.Settin&gs\ .&Install\ .&Install\ updates\ 
+	&CVS.Settin&gs\ .&Install\ .&Download\ updates\ 
+	&CVS.Settin&gs\ .&Install\ .Install\ buffer\ as\ &help\ 
+	&CVS.Settin&gs\ .&Install\ .Install\ buffer\ as\ &plugin\ 
+	&CVS.&Keyword\ .&Author\ 
+	&CVS.&Keyword\ .&Date\ 
+	&CVS.&Keyword\ .&Header\ 
+	&CVS.&Keyword\ .&Id\ 
+	&CVS.&Keyword\ .&Name\ 
+	&CVS.&Keyword\ .Loc&ker\ 
+	&CVS.&Keyword\ .&Log\ 
+	&CVS.&Keyword\ .RCS&file\ 
+	&CVS.&Keyword\ .&Revision\ 
+	&CVS.&Keyword\ .&Source\ 
+	&CVS.&Keyword\ .S&tate\ 
+	&CVS.Director&y\ .&Log\ 
+	&CVS.Director&y\ .&Status\ 
+	&CVS.Director&y\ .S&hort\ status\ 
+	&CVS.Director&y\ .Lo&cal\ status\ 
+	&CVS.Director&y\ .&Query\ update\ 
+	&CVS.Director&y\ .&Update\ 
+	&CVS.Director&y\ .&Add\ 
+	&CVS.Director&y\ .Comm&it\ 
+""-	CHAR	0
+	/
 
 # File marks:
-'0  1  5  ~/code/Yalung-Linux-Tools/.git/COMMIT_EDITMSG
-'1  1  0  ~/code/Yalung-Linux-Tools/README
-'2  3  4  ~/.gitconfig
-'3  1  0  ~/code/Yalung-Linux-Tools/README
-'4  8  24  ~/.vimrc
-'5  1  2  ~/test.c
-'6  1  2  ~/test
-'7  26  19  ~/.vimrc
-'8  52  0  ~/.vimrc
-'9  3  3  ~/code/test.cpp
+'0  7  0  ~/.pushmyconf.sh
+'1  8  0  ~/.pushmyconf.sh
+'2  1  0  ~/pushmyconf.shx
+'3  2  0  ~/pushmyconf.sh
+'4  4  0  ~/.vimrc
+'5  11  0  ~/code/mygithub/simple/locks/rwspinlock.h
+'6  1  9  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
+'7  181  10  ~/code/gperftools-2.0/src/malloc_hook.cc
+'8  146  1  ~/code/gperftools-2.0/src/symbolize.cc
+'9  182  4  ~/code/gperftools-2.0/src/symbolize.cc
 
 # Jumplist (newest first):
--'  1  5  ~/code/Yalung-Linux-Tools/.git/COMMIT_EDITMSG
--'  1  0  ~/code/Yalung-Linux-Tools/README
--'  3  4  ~/.gitconfig
--'  1  0  ~/.gitconfig
--'  8  24  ~/.vimrc
--'  7  26  ~/.vimrc
--'  26  20  ~/.vimrc
--'  12  1  ~/.vimrc
+-'  7  0  ~/.pushmyconf.sh
+-'  1  0  ~/.pushmyconf.sh
+-'  8  0  ~/.pushmyconf.sh
+-'  1  0  ~/pushmyconf.shx
+-'  2  0  ~/pushmyconf.sh
+-'  1  0  ~/pushmyconf.sh
+-'  4  0  ~/.vimrc
+-'  9  0  ~/.vimrc
+-'  8  0  ~/.vimrc
 -'  1  0  ~/.vimrc
--'  1  2  ~/test.c
--'  1  2  ~/test
--'  52  0  ~/.vimrc
--'  3  3  ~/code/test.cpp
--'  1  0  ~/code/test.cpp
--'  63  0  ~/.vimrc
--'  11  0  ~/code/__Tag_List__
--'  12  0  ~/code/__Tag_List__
--'  1  0  /usr/share/vim/vim73/doc/help.txt
--'  62  0  ~/.vimrc
--'  58  0  ~/.vimrc
--'  54  29  ~/.vimrc
--'  6  0  ~/code/test.cpp
--'  9  2  ~/code/test.cpp
--'  51  33  ~/.vimrc
--'  66  12  ~/code/AutoComplPop/README
--'  1  0  ~/code/AutoComplPop/README
--'  13  4  ~/code/test.cpp
--'  248  0  ~/.vim/plugin/snipMate.vim
--'  1  0  ~/.vim/plugin/snipMate.vim
--'  92  0  ~/code/AutoComplPop/README
--'  101  0  ~/code/AutoComplPop/README
--'  50  0  ~/.vimrc
--'  18  4  ~/code/test.cpp
--'  1  0  /boot/grub/grub.cfg
--'  119  39  /boot/grub/grub.cfg
--'  114  5  /boot/grub/grub.cfg
--'  106  38  /boot/grub/grub.cfg
--'  105  36  /boot/grub/grub.cfg
--'  104  5  /boot/grub/grub.cfg
--'  53  19  /boot/grub/grub.cfg
--'  52  37  /boot/grub/grub.cfg
--'  51  6  /boot/grub/grub.cfg
--'  44  35  /boot/grub/grub.cfg
--'  43  4  /boot/grub/grub.cfg
--'  149  18  /boot/grub/grub.cfg
--'  117  47  /boot/grub/grub.cfg
--'  6  0  /boot/grub/grub.cfg
--'  23  22  ~/.profile
--'  1  0  ~/.profile
--'  25  5  ~/.profile
--'  22  0  ~/.profile
--'  24  5  ~/.profile
--'  23  22  ~/.profile
--'  1  0  ~/.profile
--'  25  5  ~/.profile
--'  22  0  ~/.profile
--'  24  5  ~/.profile
--'  23  22  ~/.profile
--'  1  0  ~/.profile
--'  25  5  ~/.profile
--'  22  0  ~/.profile
--'  24  5  ~/.profile
--'  23  22  ~/.profile
--'  1  0  ~/.profile
--'  25  5  ~/.profile
--'  22  0  ~/.profile
--'  24  5  ~/.profile
--'  23  22  ~/.profile
--'  1  0  ~/.profile
--'  25  5  ~/.profile
--'  22  0  ~/.profile
--'  24  5  ~/.profile
--'  23  22  ~/.profile
--'  1  0  ~/.profile
--'  25  5  ~/.profile
--'  22  0  ~/.profile
--'  24  5  ~/.profile
--'  23  22  ~/.profile
--'  1  0  ~/.profile
--'  25  5  ~/.profile
--'  22  0  ~/.profile
--'  24  5  ~/.profile
--'  23  22  ~/.profile
--'  1  0  ~/.profile
--'  25  5  ~/.profile
--'  22  0  ~/.profile
--'  24  5  ~/.profile
--'  1  0  /boot/grub/grub.cfg
--'  119  39  /boot/grub/grub.cfg
--'  114  5  /boot/grub/grub.cfg
--'  106  38  /boot/grub/grub.cfg
--'  105  36  /boot/grub/grub.cfg
--'  104  5  /boot/grub/grub.cfg
--'  53  19  /boot/grub/grub.cfg
--'  52  37  /boot/grub/grub.cfg
--'  51  6  /boot/grub/grub.cfg
--'  1  0  ~/code/Yalung-Linux-Tools/README
+-'  11  0  ~/code/mygithub/simple/locks/rwspinlock.h
+-'  1  0  ~/code/mygithub/simple/locks/rwspinlock.h
+-'  1  9  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
+-'  181  10  ~/code/gperftools-2.0/src/malloc_hook.cc
+-'  1  0  ~/code/gperftools-2.0/src/malloc_hook.cc
+-'  146  1  ~/code/gperftools-2.0/src/symbolize.cc
+-'  1  0  ~/code/gperftools-2.0/src/symbolize.cc
+-'  182  4  ~/code/gperftools-2.0/src/symbolize.cc
+-'  331  0  ~/code/gperftools-2.0/src/profiledata.cc
+-'  1  0  ~/code/gperftools-2.0/src/profiledata.cc
+-'  5  33  ~/code/mygithub/simple/locks/test/Makefile
+-'  1  0  ~/code/mygithub/simple/locks/test/Makefile
+-'  4  0  ~/code/mygithub/simple/locks/test/Makefile
+-'  7  0  ~/code/mygithub/simple/locks/test/Makefile
+-'  1  0  /usr/share/vim-scripts/vimplate-templates/Makefile-C.tt
+-'  345  0  /etc/samba/smb.conf
+-'  1  0  /etc/samba/smb.conf
+-'  1  0  ~/code/mygithub/simple/README.md
+-'  92  38  ~/code/workspace/simple/locks/locks.mk
+-'  94  159  ~/code/workspace/simple/locks/locks.mk
+-'  93  46  ~/code/workspace/simple/locks/locks.mk
+-'  91  46  ~/code/workspace/simple/locks/locks.mk
+-'  97  140  ~/code/workspace/simple/locks/locks.mk
+-'  96  50  ~/code/workspace/simple/locks/locks.mk
+-'  1  0  ~/code/workspace/simple/locks/locks.mk
+-'  37  32  ~/code/workspace/simple/locks/locks.mk
+-'  90  80  ~/code/mygithub/simple/locks/test/locks.mk
+-'  63  39  ~/code/mygithub/simple/locks/test/locks.mk
+-'  34  26  ~/code/mygithub/simple/locks/test/locks.mk
+-'  6  25  ~/code/mygithub/simple/locks/test/locks.mk
+-'  1  0  ~/code/mygithub/simple/locks/test/locks.mk
+-'  70  14  ~/code/mygithub/simple/locks/test/locks.mk
+-'  36  32  ~/code/mygithub/simple/locks/test/locks.mk
+-'  53  12  ~/code/mygithub/simple/locks/test/locks.mk
+-'  31  25  ~/code/mygithub/simple/locks/test/locks.mk
+-'  25  25  ~/code/mygithub/simple/locks/test/locks.mk
+-'  66  0  ~/code/mygithub/simple/locks/test/locks.mk
+-'  45  27  ~/code/mygithub/simple/locks/test/locks.mk
+-'  111  0  ~/code/mygithub/simple/locks/test/locks.mk
+-'  105  0  ~/code/mygithub/simple/locks/test/locks.mk
+-'  2  0  ~/code/mygithub/simple/locks/test/simple_wsp.mk
+-'  1  0  ~/code/mygithub/simple/locks/test/simple_wsp.mk
+-'  8  0  ~/code/mygithub/simple/locks/test/simple_wsp.mk
+-'  1  0  ~/code/新建文件夹/test.txt
+-'  341  19  /etc/samba/smb.conf
+-'  337  0  /etc/samba/smb.conf
+-'  60  28  /usr/share/vim-scripts/doc/omnicppcomplete.txt
+-'  38  31  /usr/share/vim-scripts/doc/omnicppcomplete.txt
+-'  27  66  /usr/share/vim-scripts/doc/omnicppcomplete.txt
+-'  88  15  /usr/share/vim-scripts/doc/omnicppcomplete.txt
+-'  2  0  /usr/share/vim-scripts/doc/omnicppcomplete.txt
+-'  1  0  /usr/share/vim-scripts/doc/omnicppcomplete.txt
+-'  31  0  ~/.vimrc
+-'  8  72  ~/code/mygithub/simple/tags
+-'  1  0  ~/code/mygithub/simple/tags
+-'  23  5  ~/code/mygithub/simple/locks/rwspinlock.h
+-'  8  1  ~/code
+-'  51  0  ~/.vimrc
+-'  20  5  ~/code/mygithub/simple/locks/rwspinlock.h
+-'  24  0  ~/code/mygithub/simple/locks/rwspinlock.h
+-'  3  0  ~/code/mygithub/simple/locks/rwspinlock.h
+-'  15  1  ~/code/mygithub/simple/locks/rwspinlock.h
+-'  22  24  ~/.vimrc
+-'  2  67  ~/.vimrc
+-'  36  19  ~/.vimrc
+-'  3  15  ~/.vimrc
+-'  18  0  ~/.vimrc
+-'  5  0  ~/.vimrc
+-'  48  0  ~/.vimrc
+-'  29  30  ~/.vimrc
+-'  12  0  ~/code/mygithub/simple/locks/rwspinlock.h
+-'  23  25  ~/.vimrc
+-'  2  0  /usr/include/c++/4.6/cpp
+-'  1  0  /usr/include/c++/4.6/cpp
+-'  1  0  ~/.vim/ctags/cpp
+-'  92  38  ~/code/workspace/simple/locks/locks.mk
+-'  94  159  ~/code/workspace/simple/locks/locks.mk
+-'  93  46  ~/code/workspace/simple/locks/locks.mk
+-'  91  46  ~/code/workspace/simple/locks/locks.mk
+-'  97  140  ~/code/workspace/simple/locks/locks.mk
+-'  4  0  ~/.vimrc
+-'  9  0  ~/.vimrc
+-'  8  0  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  11  0  ~/code/mygithub/simple/locks/rwspinlock.h
+-'  1  0  ~/code/mygithub/simple/locks/rwspinlock.h
+-'  1  9  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
+-'  181  10  ~/code/gperftools-2.0/src/malloc_hook.cc
 
 # History of marks within files (newest to oldest):
+
+> ~/.pushmyconf.sh
+	"	7	0
+	^	7	0
+	.	6	8
+	+	2	100
+	+	3	34
+	+	5	25
+	+	6	8
+
+> ~/pushmyconf.shx
+	"	1	0
+
+> ~/pushmyconf.sh
+	"	2	0
+	^	2	0
+	.	1	12
+	+	1	12
+
+> ~/.vimrc
+	"	4	0
+	.	5	0
+	+	1	20
+	+	14	9
+	+	14	0
+	+	1	1
+	+	14	34
+	+	14	0
+	+	14	0
+	+	14	23
+	+	14	29
+	+	14	22
+	+	14	0
+	+	14	0
+	+	14	13
+	+	14	13
+	+	14	38
+	+	14	31
+	+	14	35
+	+	14	26
+	+	1	0
+	+	1	0
+	+	14	12
+	+	1	0
+	+	5	0
+	+	6	0
+	+	5	0
+	+	5	0
+	+	3	0
+	+	3	0
+	+	14	17
+	+	14	17
+	+	14	17
+	+	14	17
+	+	14	0
+	+	14	0
+	+	14	23
+	+	14	0
+	+	1	10
+	+	14	0
+	+	14	0
+	+	14	0
+	+	14	0
+	+	14	0
+	+	14	0
+	+	14	0
+	+	14	0
+	+	1	0
+	+	3	0
+	+	5	0
+	+	9	0
+	+	14	0
+	+	14	0
+	+	14	20
+	+	14	0
+	+	1	0
+	+	3	16
+	+	2	7
+	+	14	68
+	+	14	0
+	+	14	5
+	+	14	15
+	+	14	0
+	+	14	0
+	+	14	0
+	+	14	0
+	+	14	0
+	+	14	0
+	+	14	0
+	+	9	0
+	+	9	0
+	+	9	0
+	+	10	0
+	+	14	0
+	+	12	0
+	+	14	0
+	+	1	0
+	+	9	0
+	+	8	0
+	+	9	0
+	+	11	0
+	+	5	0
+
+> ~/code/mygithub/simple/locks/rwspinlock.h
+	"	11	0
+	^	23	6
+	.	23	5
+	+	1	28
+	+	1	0
+	+	1	27
+	+	1	0
+	+	1	28
+	+	1	21
+	+	1	29
+	+	1	38
+	+	1	19
+	+	1	0
+	+	1	14
+	+	1	14
+	+	1	0
+	+	1	29
+	+	37	18
+	+	37	18
+	+	38	4
+	+	10	0
+	+	33	14
+	+	35	0
+	+	10	0
+	+	29	17
+	+	30	13
+	+	30	16
+	+	30	0
+	+	31	0
+	+	16	0
+	+	26	14
+	+	27	1
+	+	10	0
+	+	15	14
+	+	15	14
+	+	15	0
+	+	20	2
+	+	19	10
+	+	20	2
+	+	23	3
+	+	1	0
+	+	23	5
+
+> ~/code/mygithub/simple/.git/COMMIT_EDITMSG
+	"	1	9
+	^	1	10
+	.	1	9
+	+	1	9
+
+> ~/code/gperftools-2.0/src/malloc_hook.cc
+	"	181	10
+
+> ~/code/gperftools-2.0/src/symbolize.cc
+	"	146	1
+
+> ~/code/gperftools-2.0/src/profiledata.cc
+	"	331	0
+
+> ~/code/mygithub/simple/locks/test/Makefile
+	"	5	33
+	^	5	34
+	.	5	18
+	+	5	18
+
+> /usr/share/vim-scripts/vimplate-templates/Makefile-C.tt
+	"	1	0
+
+> /etc/samba/smb.conf
+	"	345	0
+	^	345	0
+	.	344	20
+	+	338	7
+	+	346	0
+	+	341	79
+	+	341	26
+	+	342	20
+	+	339	0
+	+	340	0
+	+	340	0
+	+	340	0
+	+	340	0
+	+	340	0
+	+	341	0
+	+	342	0
+	+	340	0
+	+	342	18
+	+	341	19
+	+	344	20
+
+> ~/code/mygithub/simple/README.md
+	"	1	0
+
+> ~/code/workspace/simple/locks/locks.mk
+	"	92	38
+	^	37	33
+	.	92	38
+	+	8	26
+	+	9	26
+	+	8	27
+	+	37	32
+	+	92	38
+
+> ~/code/mygithub/simple/locks/test/locks.mk
+	"	90	80
+	^	36	33
+	.	90	61
+	+	8	28
+	+	9	26
+	+	17	0
+	+	36	32
+	+	90	61
+
+> ~/code/mygithub/simple/locks/test/simple_wsp.mk
+	"	2	0
+
+> ~/code/新建文件夹/test.txt
+	"	1	0
+
+> /usr/share/vim-scripts/doc/omnicppcomplete.txt
+	"	60	28
+
+> ~/code/kernel/linux/0003-i.patch
+	"	5	42
+	^	5	43
+	.	5	15
+	+	5	15
+
+> ~/code/kernel/linux/.git/COMMIT_EDITMSG
+	"	1	0
+	^	1	1
+	.	1	0
+	+	1	0
+
+> ~/code/kernel/linux/README
+	"	1	9
+	^	1	10
+	.	1	9
+	+	2	1
+	+	1	9
+
+> ~/code/kernel/linux/0001-test-patch.patch
+	"	21	0
+
+> samples/tracepoints/tracepoint-sample.c
+	"	1	0
+
+> ~/.vim/autoload/pyclewn.vim
+	"	231	0
+
+> ~/.vimlite/VimLite.vba
+	"	11813	0
+
+> ~/.vim/.VimballRecord
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/doc/VimLite.txt
+	"	629	3
+
+> ~/.vim/ctags/cpp
+	"	7584	22
+
+> ~/.vim/vimplate-templates/cpp-default.tt
+	"	26	4
+	.	24	0
+	+	24	0
+
+> ~/.vim/vimplate-templates/Makefile-C.tt
+	"	23	5
+
+> ~/code/mygithub/simple/tags
+	"	11	0
+
+> ~/code/mygithub/simple/test.cpp
+	"	18	0
+	^	18	0
+	.	17	5
+	+	17	0
+	+	16	18
+	+	17	0
+	+	20	4
+	+	4	0
+	+	12	0
+	+	9	41
+	+	10	0
+	+	19	5
+	+	3	0
+	+	19	0
+	+	3	0
+	+	19	3
+	+	19	1
+	+	17	2
+	+	19	2
+	+	17	5
+
+> ~/.vim/after/ftplugin/cpp.vim
+	"	2	0
+
+> ~/.vim/after/ftplugin/c.vim
+	"	2	0
+
+> ~/code/gperftools-2.0/src/page_heap.h
+	"	98	0
+
+> /usr/share/vim/vim73/doc/options.txt
+	"	5165	12
+
+> ~/.vim/README
+	"	5	0
+
+> /usr/include/c++/4.6/cpp
+	"	2	0
+
+> ~/code/gperftools-2.0/src/pagemap.h
+	"	100	0
+
+> ~/code/gperftools-2.0/src/common.h
+	"	220	4
+
+> ~/code/gperftools-2.0/src/thread_cache.h
+	"	403	4
+
+> ~/code/gperftools-2.0/src/span.h
+	"	29	0
+
+> ~/code/gperftools-2.0/src/system-alloc.cc
+	"	122	0
+
+> ~/code/gperftools-2.0/src/stacktrace.cc
+	"	32	0
+
+> ~/code/gperftools-2.0/INSTALL
+	"	1	0
+
+> ~/code/mygithub/simple/locks/README.md
+	"	2	0
+	^	2	40
+	.	2	39
+	+	2	39
+
+> ~/code/mygithub/simple/locks/README
+	"	1	0
+	^	2	20
+	.	1	19
+	+	1	153
+	+	2	6
+	+	1	19
+
+> ~/.gitconfig
+	"	11	35
+	^	11	30
+	.	11	0
+	+	1	6
+	+	2	0
+	+	5	14
+	+	7	11
+	+	14	0
+	+	12	0
+	+	9	38
+	+	11	0
+
+> ~/.msmtprc
+	"	1	0
+	^	15	23
+	.	15	0
+	+	12	0
+	+	5	13
+	+	6	23
+	+	7	0
+	+	7	0
+	+	15	0
+	a	6	5
+
+> ~/code/simple/README.md
+	"	8	0
+	^	10	0
+	.	10	0
+	+	4	28
+	+	7	14
+	+	6	3
+	+	10	0
+
+> ~/code/something-to-save/README.md
+	"	2	16
+
+> ~/code/somthing-to-save/.git/COMMIT_EDITMSG
+	"	1	5
+	^	1	6
+	.	1	5
+	+	1	5
 
 > ~/code/Yalung-Linux-Tools/.git/COMMIT_EDITMSG
 	"	1	5
@@ -177,46 +755,6 @@
 	^	1	0
 	.	1	0
 	+	1	0
-
-> ~/.gitconfig
-	"	3	4
-	^	3	5
-	.	2	0
-	+	1	6
-	+	2	0
-
-> ~/.vimrc
-	"	8	24
-	^	8	25
-	.	8	0
-	+	1	20
-	+	49	9
-	+	48	0
-	+	1	1
-	+	51	34
-	+	55	0
-	+	54	0
-	+	55	23
-	+	54	29
-	+	57	22
-	+	56	0
-	+	57	0
-	+	56	13
-	+	57	13
-	+	60	38
-	+	61	31
-	+	62	35
-	+	23	26
-	+	5	0
-	+	5	0
-	+	23	12
-	+	5	0
-	+	11	0
-	+	12	0
-	+	11	0
-	+	9	0
-	+	7	0
-	+	8	0
 
 > ~/test.c
 	"	1	2
