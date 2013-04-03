@@ -1142,3 +1142,306 @@ ll
 git help
 halt -p
 sudo halt -p
+halt -p
+sudo halt -p
+ifconfig 
+ifocnfig -a
+ifconfig -a
+sudo vi /etc/network/interfaces 
+ifoconfig eth2
+ifconfig eth2
+sudo vi /etc/network/interfaces 
+ifconfig eth2
+sudo vi /etc/network/interfaces 
+/etc/init.d/network restart
+/etc/init.d/networking restart
+sudo /etc/init.d/network
+sudo vi /etc/network/interfaces 
+/etc/init.d/networking restart
+sudo /etc/init.d/networking restart
+sudo /etc/init.d/networking stop
+sudo /etc/init.d/networking start
+ifconfig 
+sudo vi /etc/network/interfaces 
+sudo /etc/init.d/networking start
+sudo /etc/init.d/networking restart
+ifconfig 
+netstat
+netstat -ant
+halt -p
+sudo halt -p
+cd code/
+ls
+cd mygithub/
+ls
+ll
+cd simple/
+ll
+cd locks/
+ll
+cd test/
+ll
+vi testlock.cpp 
+cd ..
+ls
+cd simple/
+ls
+ll
+git add -A 
+git commit -a
+git push
+cd locks/test/
+ll
+rm a.out 
+ll
+vi testlock.cpp 
+ll
+vi testlock.cpp 
+ll
+vi testlock.h
+vi testlock.cpp
+ll
+cp testlock.cpp lockers.h
+vi lockers.h 
+ifconfig 
+ifconfig -a
+vi /etc/network/interfaces 
+sudo vi /etc/network/interfaces 
+ll
+halt -p
+sudo halt -p
+ll
+ifconfig 
+ping 10.10.10.1
+reboot 
+sudo reboot
+ping 10.10.10.1
+halt -p
+sudo halt -p
+ifconfig 
+ifconfig  -a
+vi /etc/network/interfaces 
+sudo vi  /etc/network/interfaces 
+ll
+cd code/
+ls
+cd mygithub/
+ll
+cd simple/
+ll
+cd locks/
+ll
+cd ~
+sudo vi /etc/network/interfaces 
+ll
+ifconfig -a
+route
+ifconfig eth3 192.168.56.123 
+sudo ifconfig eth3 192.168.56.123 
+ping 192.168.56.1
+route
+sudo vi /etc/network/interfaces 
+sudo reboot 
+ll
+ifcongfig -a
+ifconfig -a
+ping 192.168.56.1
+route
+ping 192.168.56.1
+ifconfig -a
+ping 192.168.56.1
+route
+ll
+sudo reboot 
+ll
+ifconfig -a
+/etc/init.d/network restart
+sudo /etc/init.d/network restart
+sudo /etc/init.d/networking restart
+ifconfig -a
+reboot 
+sudo reboot 
+sudo vi /boot/grub/grub.cfg 
+ifconfig -a
+sudo vi /boot/grub/grub.cfg 
+vi /etc/default/grub 
+sudo /etc/default/grub 
+sudo vi /etc/default/grub 
+sudo vi /etc/grub.d/41_custom 
+sudo vi /etc/grub.d/10_linux 
+reboot 
+sudo reboot 
+update-grub
+sudo update-grub
+vi /boot/grub/boot.cfg
+vi /boot/grub/grub.cfg 
+fidsk -l
+sudo fdisk -l
+l /dev/
+l /dev/sda
+l /dev/
+ls /dev/disk/by-uuid/
+ls /dev/disk/by-uuid/ -l
+sudo reboot
+sudo vi /etc/default/grub 
+sudo update-grub
+sudo reboot 
+sudo reboot
+ll
+sudo vi /boot/grub/grub.cfg 
+sudo vi /etc/grub.d/30_os-prober 
+sudo vi /etc/default/grub 
+sudo update-grub
+sudo vi /etc/default/grub 
+ifconfig -a
+route
+ifconfig -a
+sudo /etc/init.d/networking restart
+ifconfig -a
+ifdown eth3
+sudo ifdown eth3
+ifconfig -a
+sudo ifup eth3
+ifconfig -a
+reboot 
+sudo reboot 
+ll
+who -a
+dmesg
+ll
+route
+ifocnfig -a
+ll
+sudo halt -p
+ll
+l
+ifconfig -a
+sudo halt -p
+ls
+ifconfig -a
+/etc/init.d/smbd restart
+sudo /etc/init.d/smbd restart
+sudo chkconfig smbd on
+reboot 
+sudo chkconfig 
+sudo chkconfig smbd on 
+insserv
+sudo apt-cache search inssrv
+sudo apt-cache search insserv
+sudo apt-get install inserv
+sudo apt-get install insserv
+cd ~
+sudo chkconfig smbd on 
+inss
+sudo apt-get install inserv
+sudo apt-get reinstall insserv
+sudo apt-get --help
+sudo apt-get reinstall insserv 
+sudo apt-get --help | more
+sudo a
+sudo chkconfig smbd on 
+sudo apt-get install insserv
+dpkg-query 
+dpkg-query --help
+dpkg-query -l insserv
+dpkg-query -l gcc
+dpkg-query --help
+dpkg-query -L insserv
+l /usr/lib/insserv/insserv 
+/usr/lib/insserv/insserv 
+sudo cp /usr/lib/insserv/insserv  /sbin/
+sudo chkconfig smbd on 
+sudo chkconfig 
+sudo vi /etc/network/interfaces 
+ifconfig 
+sudo vi /etc/network/interfaces 
+reboot 
+sudo reboot 
+sudo rm /sbin/insserv 
+sudo ln -s /usr/lib/insserv/insserv /sbin/insserv
+ll
+sudo chkconfig smbd on
+sudo apt-get --hel
+sudo apt-get --help
+sudo apt-get chkconfig 
+sudo apt-get install chkconfig 
+sudo dpkg --help
+sudo dpkg-query -L chkconfig 
+sudo dpkg-query -L insserv
+sudo dpkg --help
+sudo dpkg -r insserv
+sudo chkconfig smbd 
+sudo chkconfig 3 smbd 
+sudo chkconfig --help  
+sudo chkconfig smbd on 35
+sudo chkconfig smbd on 3 
+sudo chkconfig smbd on 3,5 
+sudo chkconfig smbd on 
+sudo chkconfig -s smbd  35
+sudo chkconfig smbd 
+sudo chkconfig smbd on
+man insserv
+sudo  /etc/init.d/
+sudo  /etc/init.d/smbd 
+sudo vi /etc/init.d/smbd 
+sudo vi /etc/init.d/rsync
+sudo vi /etc/init.d/ssh
+sudo vi /etc/init.d/smbd 
+ll
+/etc/init.d/smbd status
+sudo /etc/init.d/smbd status
+sudo halt -p
+ll
+cd code/
+ls
+ll
+cd kernel/
+ll
+cd linux/
+ll
+vi 
+vi /home/yalung/.vimrc 
+vi 
+cd ..
+ls
+cd ..
+ls
+cd mygithub/
+ls
+d simple/
+cd simple/
+ll
+cd locks/
+ll
+sed 's/\t/    /g' waiter.h
+sed -i 's/\t/    /g' test/*
+sed -i 's/\t/    /g' *.h
+ll
+cd test/
+ll
+vi Makefile
+ll
+rm .lockers.h.swp 
+ll
+cd ..
+ll
+cd ..
+git commit -a
+git push
+ll
+cd locks/
+ll
+cd test/
+ll
+vi Makefile
+ll
+vi Makefile
+make 
+vi Makefile
+make TestPthreadMutex
+vi Makefile
+make TestPthreadMutex
+ll
+l
+ll
+vi Makefile

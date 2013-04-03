@@ -8,53 +8,25 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/init
-
-# Last Substitute String:
-$
+~MSle0~/timeout
 
 # Command Line History (newest to oldest):
-:x
-:w
-:14
-:17
 :q!
-:$
-:1
-:set nonu
-:set nu
-:cs f g __native_read_tsc
-:cs add .
-:cs f g read_tsc
-:cd f g read_tsc
-:cs f g __read_tsc
-:4
-:w@
-:18
-:11
+:!!
+:x
 :Q!
-:tselect RWSpinLock
+:cs f g e1000_clean_rx_irq
+:$
+:w
+:q1
+:set nonu
+:1
+:set no nu
 
 # Search String History (newest to oldest):
-?/init
-?/Init
-?/main.cpp
-?/lock
-?/Target
-?/target
-?/gcc
-?/-o
-?/makedir
-?/ctags
-?/CTRL
-?/F12
-?/dir
-?/autodir
-?/root
-?/UUID
-? ^\s*$
-?/Prere
-?/vector
+?/timeout
+?/uuid
+?/cmdline
 
 # Expression History (newest to oldest):
 
@@ -64,863 +36,279 @@ $
 
 # Registers:
 "0	LINE	0
-	" ============================================================================
-	" Netrw Directory Listing                                        (netrw v143)
-	"   /home
-	"   Sorted by      name
-	"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,\~\=\*$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
-	"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:exec
-	" ============================================================================
-	../
-	yalung/
+	auto eth0
 ""1	LINE	0
-	}
+	            pthread_wrapper.h 
 "2	LINE	0
-		printf("%ld\n", Random(100, 120));	
+	public:
 "3	LINE	0
-		for (i = 0; i < 100; i++)
+		}
 "4	LINE	0
-		
+			::RW
 "5	LINE	0
-		int i = 0;
+		void RLock() {
 "6	LINE	0
-	int main() {
+	
 "7	LINE	0
-	#include <stdio.h>
+	};
 "8	LINE	0
-	#include "random.h"
+		}
 "9	LINE	0
-	#endif
-"k	LINE	0
-	nmap ,cf :em 
-	nmap ,cgf :em 
-	nmap ,cgm :em 
-	nmap ,cgae :em 
-	nmap ,cgad :em 
-	nmap ,cgtb :em 
-	nmap ,cgtd :em 
-	nmap ,cgdo :em 
-	nmap ,cgdd :em 
-	nmap ,cgda :em 
-	nmap ,cgdn :em 
-	nmap ,cgds :em 
-	nmap ,cgqe :em 
-	nmap ,cgqd :em 
-	nmap ,cgqo :em 
-	nmap ,cgqh :em 
-	nmap ,cgoos :em 
-	nmap ,cgool :em 
-	nmap ,cgoot :em 
-	nmap ,cgoob :em 
-	nmap ,cgob :em 
-	nmap ,cgon :em 
-	nmap ,cgoa :em 
-	nmap ,cgoc :em 
-	nmap ,cgof :em 
-	nmap ,cgos :em 
-	nmap ,cgou :em 
-	nmap ,cgii :em 
-	nmap ,cgid :em 
-	nmap ,cgih :em 
-	nmap ,cgip :em 
-	nmap ,cka :em 
-	nmap ,ckd :em 
-	nmap ,ckh :em 
-	nmap ,cki :em 
-	nmap ,ckn :em 
-	nmap ,ckk :em 
-	nmap ,ckl :em 
-	nmap ,ckf :em 
-	nmap ,ckr :em 
-	nmap ,cks :em 
-	nmap ,ckt :em 
-	nmap ,cyl :em 
-	nmap ,cys :em 
-	nmap ,cyh :em 
-	nmap ,cyc :em 
-	nmap ,cyq :em 
-	nmap ,cyu :em 
-	nmap ,cya :em 
-	nmap ,cyi :em 
-"m	LINE	0
-	&CVS.In&fo\ 
-	&CVS.Settin&gs\ .In&fo\ (buffer)\ 
-	&CVS.Settin&gs\ .Show\ &mappings\ 
-	&CVS.Settin&gs\ .&Autocheck\ .&Enable\ 
-	&CVS.Settin&gs\ .&Autocheck\ .&Disable\ 
-	&CVS.Settin&gs\ .&Target\ .File\ in\ &buffer\ 
-	&CVS.Settin&gs\ .&Target\ .&Directory\ 
-	&CVS.Settin&gs\ .&Diff\ .Stay\ in\ &original\ 
-	&CVS.Settin&gs\ .&Diff\ .Switch\ to\ &diffed\ 
-	&CVS.Settin&gs\ .&Diff\ .&Autorestore\ prev\.mode\ 
-	&CVS.Settin&gs\ .&Diff\ .&No\ autorestore\ 
-	&CVS.Settin&gs\ .&Diff\ .Re&store\ pre-diff\ mode\ 
-	&CVS.Settin&gs\ .Revision\ &queries\ .&Enable\ 
-	&CVS.Settin&gs\ .Revision\ &queries\ .&Disable\ 
-	&CVS.Settin&gs\ .Revision\ &queries\ .&Offer\ current\ rev\ 
-	&CVS.Settin&gs\ .Revision\ &queries\ .&Hide\ current\ rev\ 
-	&CVS.Settin&gs\ .&Output\ .N&otifcation.Enable\ &statusline\ 
-	&CVS.Settin&gs\ .&Output\ .N&otifcation.Disable\ status&line\ 
-	&CVS.Settin&gs\ .&Output\ .N&otifcation.Enable\ &titlebar\ 
-	&CVS.Settin&gs\ .&Output\ .N&otifcation.Disable\ title&bar\ 
-	&CVS.Settin&gs\ .&Output\ .To\ new\ &buffer\ 
-	&CVS.Settin&gs\ .&Output\ .&Notify\ only\ 
-	&CVS.Settin&gs\ .&Output\ .&Autoswitch\ 
-	&CVS.Settin&gs\ .&Output\ .&Compressed\ 
-	&CVS.Settin&gs\ .&Output\ .&Full\ 
-	&CVS.Settin&gs\ .&Output\ .&Sorted\ 
-	&CVS.Settin&gs\ .&Output\ .&Unsorted\ 
-	&CVS.Settin&gs\ .&Install\ .&Install\ updates\ 
-	&CVS.Settin&gs\ .&Install\ .&Download\ updates\ 
-	&CVS.Settin&gs\ .&Install\ .Install\ buffer\ as\ &help\ 
-	&CVS.Settin&gs\ .&Install\ .Install\ buffer\ as\ &plugin\ 
-	&CVS.&Keyword\ .&Author\ 
-	&CVS.&Keyword\ .&Date\ 
-	&CVS.&Keyword\ .&Header\ 
-	&CVS.&Keyword\ .&Id\ 
-	&CVS.&Keyword\ .&Name\ 
-	&CVS.&Keyword\ .Loc&ker\ 
-	&CVS.&Keyword\ .&Log\ 
-	&CVS.&Keyword\ .RCS&file\ 
-	&CVS.&Keyword\ .&Revision\ 
-	&CVS.&Keyword\ .&Source\ 
-	&CVS.&Keyword\ .S&tate\ 
-	&CVS.Director&y\ .&Log\ 
-	&CVS.Director&y\ .&Status\ 
-	&CVS.Director&y\ .S&hort\ status\ 
-	&CVS.Director&y\ .Lo&cal\ status\ 
-	&CVS.Director&y\ .&Query\ update\ 
-	&CVS.Director&y\ .&Update\ 
-	&CVS.Director&y\ .&Add\ 
-	&CVS.Director&y\ .Comm&it\ 
+			}
 "-	CHAR	0
-	u
+	 
 
 # File marks:
-'0  1  0  ~/code/mygithub/simple/locks/test/testr.cpp
-'1  1  17  ~/code/mygithub/simple/locks/test/testr.cpp
-'2  3  0  ~/code/mygithub/simple/locks/test/random.h
-'3  21  0  ~/code/mygithub/simple/locks/test/random.h
-'4  2  54  ~/code/mygithub/simple/locks/test/random.h
-'5  17  1  ~/code/mygithub/simple/locks/test/testlock.cpp
-'6  9  0  ~/.vimrc
-'7  1  0  ~/code/mygithub/simple/locks/test/testr.cpp
-'8  108  0  ~/code/mygithub/simple/locks/test/testlock.cpp
-'9  30  0  ~/code/mygithub/simple/locks/test/testlock.h
+'0  2  0  ~/code/mygithub/simple/locks/test/lockers.h
+'1  1  0  ~/code/mygithub/simple/locks/test/testlock.cpp
+'2  8  0  ~/code/mygithub/simple/locks/test/Makefile
+'3  2  0  ~/code/mygithub/simple/locks/test/Makefile
+'4  3  0  ~/code/mygithub/simple/locks/test/Makefile
+'5  4  0  ~/code/mygithub/simple/locks/test/Makefile
+'6  7  5  ~/code/mygithub/simple/locks/test/Makefile
+'7  5  15  ~/code/mygithub/simple/locks/test/Makefile
+'8  1  5  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
+'9  898  0  ~/code/kernel/linux/drivers/net/ethernet/intel/e1000e/netdev.c
 
 # Jumplist (newest first):
--'  1  0  ~/code/mygithub/simple/locks/test/testr.cpp
--'  3  0  ~/code/mygithub/simple/locks/test/random.h
--'  1  0  ~/code/mygithub/simple/locks/test/random.h
--'  21  0  ~/code/mygithub/simple/locks/test/random.h
--'  4  59  ~/code/mygithub/simple/locks/test/random.h
--'  2  54  ~/code/mygithub/simple/locks/test/random.h
--'  17  1  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  2  0  ~/code/mygithub/simple/locks/test/lockers.h
+-'  1  0  ~/code/mygithub/simple/locks/test/lockers.h
 -'  1  0  ~/code/mygithub/simple/locks/test/testlock.cpp
--'  9  0  ~/.vimrc
--'  1  0  ~/.vimrc
--'  108  0  ~/code/mygithub/simple/locks/test/testlock.cpp
--'  30  0  ~/code/mygithub/simple/locks/test/testlock.h
--'  1  0  ~/code/mygithub/simple/locks/test/testlock.h
--'  10  1  ~/.vimrc
--'  8  1  ~/
--'  49  0  ~/code/kernel/linux/arch/x86/include/asm/msr.h
--'  115  9  ~/code/kernel/linux/arch/x86/include/asm/msr.h
--'  1  0  ~/code/kernel/linux/arch/x86/include/asm/msr.h
--'  113  0  ~/code/kernel/linux/arch/x86/include/asm/msr.h
--'  82  14  ~/code/kernel/linux/arch/x86/kernel/tsc.c
--'  356  20  ~/code/kernel/linux/arch/x86/kernel/paravirt.c
--'  1265  0  ~/code/kernel/linux/arch/x86/kvm/x86.c
--'  763  20  ~/code/kernel/linux/arch/x86/kernel/tsc.c
--'  117  29  ~/code/kernel/linux/arch/x86/include/asm/msr.h
--'  1  0  ~/code/kernel/linux/arch/x86/kernel/paravirt.c
--'  17  4  ~/code/mygithub/simple/locks/test.cpp
--'  1  0  ~/code/mygithub/simple/locks/test.cpp
--'  24  0  ~/code/mygithub/simple/locks/test.cpp
--'  21  15  ~/code/mygithub/simple/locks/test.cpp
--'  3  17  ~/code/mygithub/simple/locks/test.cpp
--'  1  1  ~/code/mygithub/simple/locks/test.cp
--'  17  0  ~/code/mygithub/simple/locks/rwspinlock.h
--'  1  0  ~/code/mygithub/simple/locks/rwspinlock.h
--'  18  1  ~/code/mygithub/simple/locks/rwspinlock.h
--'  14  59  ~/code/mygithub/simple/locks/atomic.h
--'  1  0  ~/code/mygithub/simple/locks/atomic.h
--'  11  0  ~/code/mygithub/simple/locks/rwspinlock.h
--'  22  12  ~/code/mygithub/simple/locks/test.cpp
--'  306  4  ~/code/gperftools-2.0/src/profiledata.cc
--'  1  0  ~/code/gperftools-2.0/src/profiledata.cc
--'  38  0  ~/code/gperftools-2.0/src/profiledata.h
--'  1  0  ~/code/gperftools-2.0/src/profiledata.h
--'  1  0  ~/code/mygithub/simple/locks/singleton.h
--'  83  0  ~/code/mygithub/simple/locks/spsc.h
--'  1  0  ~/code/mygithub/simple/locks/spsc.h
--'  77  0  ~/code/mygithub/simple/locks/spsc.h
--'  58  30  ~/code/gperftools-2.0/src/raw_printer.h
--'  1  0  ~/code/gperftools-2.0/src/raw_printer.h
--'  101  0  ~/code/gperftools-2.0/src/linked_list.h
--'  1  0  ~/code/gperftools-2.0/src/linked_list.h
--'  183  29  ~/code/gperftools-2.0/src/profiledata.h
--'  53  20  ~/code/gperftools-2.0/src/profiledata.cc
--'  3  0  ~/code/gperftools-2.0/src/profiledata.cc
--'  2  0  ~/test.cpp
--'  1  0  ~/test.cpp
--'  3  3  ~/test.cpp
--'  5  0  ~/.vimrc
--'  4  0  ~/.vimrc
--'  7  0  ~/.pushmyconf.sh
--'  1  0  ~/.pushmyconf.sh
--'  8  0  ~/.pushmyconf.sh
--'  1  0  ~/pushmyconf.shx
--'  2  0  ~/pushmyconf.sh
--'  1  0  ~/pushmyconf.sh
--'  15  0  ~/.vimrc
--'  14  0  ~/.vimrc
--'  1  9  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
--'  181  10  ~/code/gperftools-2.0/src/malloc_hook.cc
--'  1  0  ~/code/gperftools-2.0/src/malloc_hook.cc
--'  146  1  ~/code/gperftools-2.0/src/symbolize.cc
--'  1  0  ~/code/gperftools-2.0/src/symbolize.cc
--'  182  4  ~/code/gperftools-2.0/src/symbolize.cc
--'  331  0  ~/code/gperftools-2.0/src/profiledata.cc
--'  5  33  ~/code/mygithub/simple/locks/test/Makefile
+-'  8  0  ~/code/mygithub/simple/locks/test/Makefile
 -'  1  0  ~/code/mygithub/simple/locks/test/Makefile
+-'  2  0  ~/code/mygithub/simple/locks/test/Makefile
+-'  3  0  ~/code/mygithub/simple/locks/test/Makefile
 -'  4  0  ~/code/mygithub/simple/locks/test/Makefile
--'  7  0  ~/code/mygithub/simple/locks/test/Makefile
--'  1  0  /usr/share/vim-scripts/vimplate-templates/Makefile-C.tt
--'  345  0  /etc/samba/smb.conf
--'  1  0  /etc/samba/smb.conf
--'  1  0  ~/code/mygithub/simple/README.md
--'  92  38  ~/code/workspace/simple/locks/locks.mk
--'  94  159  ~/code/workspace/simple/locks/locks.mk
--'  93  46  ~/code/workspace/simple/locks/locks.mk
--'  91  46  ~/code/workspace/simple/locks/locks.mk
--'  97  140  ~/code/workspace/simple/locks/locks.mk
--'  96  50  ~/code/workspace/simple/locks/locks.mk
--'  1  0  ~/code/workspace/simple/locks/locks.mk
--'  37  32  ~/code/workspace/simple/locks/locks.mk
--'  90  80  ~/code/mygithub/simple/locks/test/locks.mk
--'  63  39  ~/code/mygithub/simple/locks/test/locks.mk
--'  34  26  ~/code/mygithub/simple/locks/test/locks.mk
--'  6  25  ~/code/mygithub/simple/locks/test/locks.mk
--'  1  0  ~/code/mygithub/simple/locks/test/locks.mk
+-'  7  5  ~/code/mygithub/simple/locks/test/Makefile
+-'  5  15  ~/code/mygithub/simple/locks/test/Makefile
+-'  1  5  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
+-'  898  0  ~/code/kernel/linux/drivers/net/ethernet/intel/e1000e/netdev.c
+-'  4280  5  ~/code/kernel/linux/drivers/net/ethernet/intel/e1000/e1000_main.c
+-'  103  0  ~/code/kernel/linux/arch/arc/include/asm/dma-mapping.h
+-'  1  0  ~/code/kernel/linux/drivers/net/ethernet/intel/e1000e/netdev.c
+-'  20  0  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  112  0  /etc/init.d/smbd
+-'  1  0  /etc/init.d/smbd
+-'  1  0  /etc/init.d/ssh
+-'  1  0  /etc/init.d/rsync
+-'  16  0  /etc/network/interfaces
+-'  1  0  /etc/network/interfaces
+-'  15  0  /etc/network/interfaces
+-'  28  0  /etc/default/grub
+-'  1  0  /etc/default/grub
+-'  8  0  /etc/default/grub
+-'  46  5  /etc/grub.d/30_os-prober
+-'  1  0  /etc/grub.d/30_os-prober
+-'  273  10  /etc/grub.d/30_os-prober
+-'  1  0  /boot/grub/grub.cfg
+-'  145  2  /boot/grub/grub.cfg
+-'  61  6  /boot/grub/grub.cfg
+-'  59  6  /boot/grub/grub.cfg
+-'  146  16  /boot/grub/grub.cfg
+-'  144  9  /boot/grub/grub.cfg
+-'  56  0  /boot/grub/grub.cfg
+-'  34  21  /etc/default/grub
+-'  120  0  /boot/grub/grub.cfg
+-'  52  26  /boot/grub/grub.cfg
+-'  44  24  /boot/grub/grub.cfg
+-'  138  25  /boot/grub/grub.cfg
+-'  131  25  /boot/grub/grub.cfg
+-'  115  25  /boot/grub/grub.cfg
+-'  105  25  /boot/grub/grub.cfg
+-'  147  10  /boot/grub/grub.cfg
+-'  153  10  /boot/grub/grub.cfg
+-'  149  10  /boot/grub/grub.cfg
+-'  13  0  /boot/grub/grub.cfg
+-'  1  0  /boot/grub/boot.cfg
+-'  72  3  /etc/grub.d/10_linux
+-'  1  0  /etc/grub.d/10_linux
+-'  4  0  /etc/grub.d/41_custom
+-'  1  0  /etc/grub.d/41_custom
+-'  11  27  /etc/default/grub
+-'  6  0  /boot/grub/grub.cfg
+-'  25  0  /boot/grub/grub.cfg
+-'  121  0  /boot/grub/grub.cfg
+-'  43  0  /boot/grub/grub.cfg
+-'  14  19  /etc/network/interfaces
+-'  9  0  /etc/network/interfaces
+-'  10  0  /etc/network/interfaces
+-'  13  0  /etc/network/interfaces
+-'  11  0  /etc/network/interfaces
+-'  28  12  ~/code/mygithub/simple/locks/test/lockers.h
+-'  1  0  ~/code/mygithub/simple/locks/test/testlock.h
+-'  55  0  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  96  5  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  103  1  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  2  0  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
+-'  107  0  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  108  0  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  104  1  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  109  0  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  41  0  ~/code/mygithub/simple/locks/test/lockers.h
+-'  42  0  ~/code/mygithub/simple/locks/test/lockers.h
+-'  1  0  ~/code/mygithub/simple/locks/test/testlock.h
+-'  1  5  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
+-'  898  0  ~/code/kernel/linux/drivers/net/ethernet/intel/e1000e/netdev.c
+-'  4280  5  ~/code/kernel/linux/drivers/net/ethernet/intel/e1000/e1000_main.c
+-'  103  0  ~/code/kernel/linux/arch/arc/include/asm/dma-mapping.h
+-'  1  0  ~/code/kernel/linux/drivers/net/ethernet/intel/e1000e/netdev.c
+-'  20  0  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  112  0  /etc/init.d/smbd
+-'  1  0  /etc/init.d/smbd
+-'  1  0  /etc/init.d/ssh
+-'  1  0  /etc/init.d/rsync
+-'  16  0  /etc/network/interfaces
+-'  1  0  /etc/network/interfaces
+-'  1  0  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  8  0  ~/code/mygithub/simple/locks/test/Makefile
+-'  1  0  ~/code/mygithub/simple/locks/test/Makefile
+-'  2  0  ~/code/mygithub/simple/locks/test/Makefile
+-'  3  0  ~/code/mygithub/simple/locks/test/Makefile
+-'  4  0  ~/code/mygithub/simple/locks/test/Makefile
 
 # History of marks within files (newest to oldest):
 
-> ~/code/mygithub/simple/locks/test/testr.cpp
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	19
-	+	1	35
-	+	1	7
-	+	1	12
-	+	1	12
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	10
-	+	1	24
-	+	1	0
-
-> ~/code/mygithub/simple/locks/test/random.h
-	"	3	0
-	^	4	60
-	.	4	59
-	+	3	0
-	+	19	63
-	+	20	0
-	+	17	72
-	+	18	20
-	+	20	50
-	+	8	23
-	+	3	0
-	+	7	0
-	+	2	54
-	+	4	59
+> ~/code/mygithub/simple/locks/test/lockers.h
+	"	2	0
+	^	20	32
+	.	28	11
+	+	9	0
+	+	17	0
+	+	15	21
+	+	16	0
+	+	16	15
+	+	16	1
+	+	16	2
+	+	15	36
+	+	12	0
+	+	15	18
+	+	13	22
+	+	15	43
+	+	16	0
+	+	17	0
+	+	18	0
+	+	16	1
+	+	18	40
+	+	19	7
+	+	20	35
+	+	21	0
+	+	22	0
+	+	23	0
+	+	21	29
+	+	22	26
+	+	23	7
+	+	25	0
+	+	28	0
+	+	26	19
+	+	31	1
+	+	30	21
+	+	28	11
 
 > ~/code/mygithub/simple/locks/test/testlock.cpp
-	"	17	1
-	^	108	1
-	.	109	0
-	+	26	35
-	+	28	1
-	+	33	9
-	+	54	76
-	+	79	0
-	+	93	1
-	+	94	3
-	+	100	4
-	+	83	0
-	+	92	2
-	+	108	34
-	+	109	0
-
-> ~/.vimrc
-	"	9	0
-	^	8	2
-	.	5	0
-	+	1	20
-	+	20	9
-	+	20	0
-	+	1	1
-	+	20	34
-	+	20	0
-	+	20	0
-	+	20	23
-	+	20	29
-	+	20	22
-	+	20	0
-	+	20	0
-	+	20	13
-	+	20	13
-	+	20	38
-	+	20	31
-	+	20	35
-	+	20	26
-	+	1	0
-	+	1	0
-	+	20	12
-	+	1	0
-	+	11	0
-	+	12	0
-	+	11	0
-	+	11	0
-	+	3	0
-	+	3	0
-	+	20	17
-	+	20	17
-	+	20	17
-	+	20	17
-	+	20	0
-	+	20	0
-	+	20	23
-	+	20	0
-	+	1	10
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	1	0
-	+	3	0
-	+	11	0
-	+	15	0
-	+	20	0
-	+	20	0
-	+	20	20
-	+	20	0
-	+	1	0
-	+	3	16
-	+	2	7
-	+	20	68
-	+	20	0
-	+	20	5
-	+	20	15
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	16	0
-	+	20	0
+	"	1	0
+	.	94	0
 	+	18	0
-	+	20	0
-	+	1	0
-	+	15	0
-	+	14	0
-	+	15	0
-	+	17	0
-	+	11	0
-	+	5	13
-	+	10	1
-	+	5	0
-	+	6	1
-	+	5	1
-	+	6	1
-	+	5	0
-
-> ~/code/mygithub/simple/locks/test/testlock.h
-	"	30	0
-
-> ~/code/kernel/linux/arch/x86/include/asm/msr.h
-	"	49	0
-
-> ~/code/kernel/linux/arch/x86/kernel/paravirt.c
-	"	356	20
-
-> ~/code/kernel/linux/arch/x86/kernel/tsc.c
-	"	82	14
-
-> ~/code/kernel/linux/arch/x86/kvm/x86.c
-	"	1265	0
-
-> ~/code/mygithub/simple/locks/test.cpp
-	"	17	4
-	^	24	0
-	.	17	0
-	+	1	21
-	+	12	26
-	+	13	26
-	+	2	19
-	+	14	0
-	+	1	11
-	+	12	13
-	+	13	19
-	+	14	19
-	+	15	33
-	+	20	11
-	+	18	11
-	+	19	11
-	+	22	12
-	+	7	21
-	+	21	26
-	+	3	17
-	+	10	0
-	+	21	16
-	+	23	1
-	+	17	0
-
-> ~/code/mygithub/simple/locks/test.cp
-	"	1	1
-	^	1	2
-	.	1	1
-	+	1	1
-
-> ~/code/mygithub/simple/locks/rwspinlock.h
-	"	17	0
-	^	18	40
-	.	18	38
-	+	1	28
-	+	1	0
-	+	1	27
-	+	1	0
-	+	1	28
-	+	1	21
-	+	1	29
-	+	1	38
-	+	1	19
-	+	1	0
-	+	1	14
-	+	1	14
-	+	1	0
-	+	1	29
-	+	37	18
-	+	37	18
-	+	38	4
-	+	10	0
-	+	33	14
-	+	35	0
-	+	10	0
-	+	29	17
-	+	30	13
-	+	30	16
-	+	30	0
-	+	31	0
-	+	16	0
-	+	26	14
-	+	27	1
-	+	10	0
-	+	15	14
-	+	15	14
-	+	15	0
-	+	20	2
-	+	19	10
-	+	20	2
-	+	23	3
-	+	1	0
-	+	23	5
-	+	18	38
-
-> ~/code/mygithub/simple/locks/atomic.h
-	"	14	59
-
-> ~/code/gperftools-2.0/src/profiledata.cc
-	"	306	4
-
-> ~/code/gperftools-2.0/src/profiledata.h
-	"	38	0
-
-> ~/code/mygithub/simple/locks/singleton.h
-	"	1	0
-
-> ~/code/mygithub/simple/locks/spsc.h
-	"	83	0
-
-> ~/code/gperftools-2.0/src/raw_printer.h
-	"	58	30
-
-> ~/code/gperftools-2.0/src/linked_list.h
-	"	101	0
-
-> ~/test.cpp
-	"	2	0
-	^	2	1
-	.	2	3
-	+	3	3
-	+	1	12
-	+	2	3
-
-> ~/.pushmyconf.sh
-	"	7	0
-	^	7	0
-	.	6	8
-	+	2	100
-	+	3	34
-	+	5	25
-	+	6	8
-
-> ~/pushmyconf.shx
-	"	1	0
-
-> ~/pushmyconf.sh
-	"	2	0
-	^	2	0
-	.	1	12
-	+	1	12
-
-> ~/code/mygithub/simple/.git/COMMIT_EDITMSG
-	"	1	9
-	^	1	10
-	.	1	9
-	+	1	9
-
-> ~/code/gperftools-2.0/src/malloc_hook.cc
-	"	181	10
-
-> ~/code/gperftools-2.0/src/symbolize.cc
-	"	146	1
+	+	94	0
 
 > ~/code/mygithub/simple/locks/test/Makefile
-	"	5	33
-	^	5	34
-	.	5	18
-	+	5	18
-
-> /usr/share/vim-scripts/vimplate-templates/Makefile-C.tt
-	"	1	0
-
-> /etc/samba/smb.conf
-	"	345	0
-	^	345	0
-	.	344	20
-	+	338	7
-	+	346	0
-	+	341	79
-	+	341	26
-	+	342	20
-	+	339	0
-	+	340	0
-	+	340	0
-	+	340	0
-	+	340	0
-	+	340	0
-	+	341	0
-	+	342	0
-	+	340	0
-	+	342	18
-	+	341	19
-	+	344	20
-
-> ~/code/mygithub/simple/README.md
-	"	1	0
-
-> ~/code/workspace/simple/locks/locks.mk
-	"	92	38
-	^	37	33
-	.	92	38
-	+	8	26
-	+	9	26
-	+	8	27
-	+	37	32
-	+	92	38
-
-> ~/code/mygithub/simple/locks/test/locks.mk
-	"	90	80
-	^	36	33
-	.	90	61
-	+	8	28
-	+	9	26
-	+	17	0
-	+	36	32
-	+	90	61
-
-> ~/code/mygithub/simple/locks/test/simple_wsp.mk
-	"	2	0
-
-> ~/code/新建文件夹/test.txt
-	"	1	0
-
-> /usr/share/vim-scripts/doc/omnicppcomplete.txt
-	"	60	28
-
-> ~/code/kernel/linux/0003-i.patch
-	"	5	42
-	^	5	43
-	.	5	15
-	+	5	15
-
-> ~/code/kernel/linux/.git/COMMIT_EDITMSG
-	"	1	0
-	^	1	1
-	.	1	0
-	+	1	0
-
-> ~/code/kernel/linux/README
-	"	1	9
-	^	1	10
-	.	1	9
-	+	2	1
-	+	1	9
-
-> ~/code/kernel/linux/0001-test-patch.patch
-	"	21	0
-
-> samples/tracepoints/tracepoint-sample.c
-	"	1	0
-
-> ~/.vim/autoload/pyclewn.vim
-	"	231	0
-
-> ~/.vimlite/VimLite.vba
-	"	11813	0
-
-> ~/.vim/.VimballRecord
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/doc/VimLite.txt
-	"	629	3
-
-> ~/.vim/ctags/cpp
-	"	7584	22
-
-> ~/.vim/vimplate-templates/cpp-default.tt
-	"	26	4
-	.	24	0
-	+	24	0
-
-> ~/.vim/vimplate-templates/Makefile-C.tt
-	"	23	5
-
-> ~/code/mygithub/simple/tags
-	"	11	0
-
-> ~/code/mygithub/simple/test.cpp
-	"	18	0
-	^	18	0
-	.	17	5
-	+	17	0
-	+	16	18
-	+	17	0
-	+	20	4
-	+	4	0
-	+	12	0
-	+	9	41
-	+	10	0
-	+	19	5
-	+	3	0
-	+	19	0
-	+	3	0
-	+	19	3
-	+	19	1
-	+	17	2
-	+	19	2
-	+	17	5
-
-> ~/.vim/after/ftplugin/cpp.vim
-	"	2	0
-
-> ~/.vim/after/ftplugin/c.vim
-	"	2	0
-
-> ~/code/gperftools-2.0/src/page_heap.h
-	"	98	0
-
-> /usr/share/vim/vim73/doc/options.txt
-	"	5165	12
-
-> ~/.vim/README
-	"	5	0
-
-> /usr/include/c++/4.6/cpp
-	"	2	0
-
-> ~/code/gperftools-2.0/src/pagemap.h
-	"	100	0
-
-> ~/code/gperftools-2.0/src/common.h
-	"	220	4
-
-> ~/code/gperftools-2.0/src/thread_cache.h
-	"	403	4
-
-> ~/code/gperftools-2.0/src/span.h
-	"	29	0
-
-> ~/code/gperftools-2.0/src/system-alloc.cc
-	"	122	0
-
-> ~/code/gperftools-2.0/src/stacktrace.cc
-	"	32	0
-
-> ~/code/gperftools-2.0/INSTALL
-	"	1	0
-
-> ~/code/mygithub/simple/locks/README.md
-	"	2	0
-	^	2	40
-	.	2	39
-	+	2	39
-
-> ~/code/mygithub/simple/locks/README
-	"	1	0
-	^	2	20
-	.	1	19
-	+	1	153
-	+	2	6
-	+	1	19
-
-> ~/.gitconfig
-	"	11	35
-	^	11	30
-	.	11	0
-	+	1	6
-	+	2	0
-	+	5	14
-	+	7	11
-	+	14	0
-	+	12	0
-	+	9	38
-	+	11	0
-
-> ~/.msmtprc
-	"	1	0
-	^	15	23
-	.	15	0
-	+	12	0
-	+	5	13
-	+	6	23
-	+	7	0
-	+	7	0
-	+	15	0
-	a	6	5
-
-> ~/code/simple/README.md
 	"	8	0
-	^	10	0
-	.	10	0
-	+	4	28
-	+	7	14
-	+	6	3
-	+	10	0
-
-> ~/code/something-to-save/README.md
-	"	2	16
-
-> ~/code/somthing-to-save/.git/COMMIT_EDITMSG
-	"	1	5
-	^	1	6
-	.	1	5
-	+	1	5
-
-> ~/code/Yalung-Linux-Tools/.git/COMMIT_EDITMSG
-	"	1	5
-	^	1	6
-	.	1	5
-	+	1	5
-
-> ~/code/Yalung-Linux-Tools/README
-	"	1	0
-	^	1	0
-	.	1	0
-	+	1	0
-
-> ~/test.c
-	"	1	2
-	^	1	3
-	.	1	2
-	+	1	2
-
-> ~/test
-	"	1	2
-	^	1	3
-	.	1	2
-	+	1	2
-
-> ~/code/test.cpp
-	"	3	3
-	^	3	4
-	.	3	4
-	+	1	7
-	+	18	4
-	+	1	8
-	+	15	0
-	+	14	0
-	+	13	4
-	+	11	0
-	+	8	1
-	+	1	17
-	+	9	4
-	+	5	3
-	+	3	4
-
-> ~/code/__Tag_List__
-	"	1	0
-	.	1	0
-	+	16	0
-	+	15	0
-	+	14	0
-	+	13	0
-	+	12	0
-	+	11	0
-	+	10	0
-	+	9	0
+	^	7	6
+	.	3	0
 	+	8	0
-	+	7	0
-	+	6	0
 	+	5	0
-	+	4	0
+	+	4	41
+	+	2	42
 	+	3	0
-	+	2	0
-	+	1	0
 
-> /usr/share/vim/vim73/doc/help.txt
+> ~/code/mygithub/simple/.git/COMMIT_EDITMSG
+	"	1	5
+	^	1	6
+	.	1	5
+	+	2	0
+	+	1	5
+
+> ~/code/kernel/linux/drivers/net/ethernet/intel/e1000e/netdev.c
+	"	898	0
+
+> ~/code/kernel/linux/drivers/net/ethernet/intel/e1000/e1000_main.c
+	"	4280	5
+
+> ~/code/kernel/linux/arch/arc/include/asm/dma-mapping.h
+	"	103	0
+
+> ~/.vimrc
+	"	20	0
+	^	20	0
+	.	19	8
+	+	19	8
+
+> /etc/init.d/smbd
+	"	112	0
+
+> /etc/init.d/ssh
 	"	1	0
 
-> ~/code/AutoComplPop/README
-	"	66	12
+> /etc/init.d/rsync
+	"	1	0
 
-> ~/.vim/plugin/snipMate.vim
-	"	248	0
-	^	248	0
-	.	248	0
-	+	259	0
-	+	257	0
-	+	248	0
+> /etc/network/interfaces
+	"	16	0
+	^	16	0
+	.	16	0
+	+	17	0
+	+	14	10
+	+	13	8
+	+	16	20
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	9	0
+	+	10	0
+	+	9	1
+	+	10	1
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	21
+	+	16	18
+	+	9	0
+	+	13	0
+	+	14	19
+	+	15	20
+	+	14	21
+	+	16	0
+
+> /etc/default/grub
+	"	28	0
+	^	8	1
+	.	8	0
+	+	11	0
+	+	8	30
+	+	7	0
+	+	8	0
+
+> /etc/grub.d/30_os-prober
+	"	46	5
 
 > /boot/grub/grub.cfg
 	"	1	0
-	^	131	41
-	.	117	51
-	+	106	51
-	+	117	51
+	^	144	12
+	.	144	11
+	+	59	15
+	+	146	16
+	+	144	11
 
-> ~/.profile
-	"	23	22
-	^	23	23
-	.	23	22
-	+	22	2
-	+	25	6
-	+	23	22
+> /boot/grub/boot.cfg
+	"	1	0
+
+> /etc/grub.d/10_linux
+	"	72	3
+
+> /etc/grub.d/41_custom
+	"	4	0
+
+> ~/code/mygithub/simple/locks/test/testlock.h
+	"	1	0

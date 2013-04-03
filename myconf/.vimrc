@@ -16,4 +16,5 @@ syntax on
 set number
 set showmatch
 set paste
+cs add .
 
