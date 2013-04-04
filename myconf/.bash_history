@@ -1445,3 +1445,108 @@ ll
 l
 ll
 vi Makefile
+cd code/
+ls
+cd mygithub/something-to-save/
+ll
+cd mydoc/
+ll
+locale
+ll
+d code
+ll
+cd code/
+ll
+cd mygithub/
+ll
+cd sim
+ll
+cd simple/
+l
+sudo /etc/init.d/smbd status
+ll
+cd locks/
+ll
+cd test/
+ll
+rm TestPthreadMutex 
+ll
+vi testlock.cpp
+ll
+vi lockers.h
+grep pthread_rwlock_init /usr/include/*
+ll
+cd /usr/
+ll
+tar czvf include.tar.gz include/
+sudo tar czvf include.tar.gz include/
+cp include.tar.gz  /home/yalung/code/
+cd /home/
+ll
+cd ~ 
+l
+ll
+mv CodeBlocks.zip .codeblocks.conf.zip
+ll
+./.pushmyconf.sh 
+vi .pushmyconf.sh 
+cd code/
+l
+cd mygithub/
+ll
+cd something-to-save/
+;;
+ll
+vi README.md 
+cd ..
+ll
+vi simple/README.md 
+cd simple/
+ls
+git push
+git commit -a
+git push
+ll
+cd ..
+ll
+rm -r Yalung-Linux-Tools/
+sudo rm -r Yalung-Linux-Tools/
+ll
+git clone git://github.com/Yalung/linux-tools.git
+ll
+cd linux-tools/
+ll
+vi README 
+git commit -a
+git push
+cd ..
+ls
+rm -r linux-tools
+sudo rm -r linux-tools
+git clone git@github.com:Yalung/linux-tools.git
+cd linux-tools/
+ll
+vi README 
+git commit -a
+git push
+cd ..
+ll
+cd simple/
+ll
+vi README.md 
+ll
+cd ..
+ls
+cd something-to-save/
+ls
+git add -A
+git commit -a
+git push
+LS
+ll
+rm -r mydoc
+git add -A
+git commit -a
+git push
+ll
+sudo halt -p

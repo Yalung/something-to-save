@@ -8,22 +8,36 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/timeout
+~MSle0~/Delay
 
 # Command Line History (newest to oldest):
 :q!
-:!!
 :x
-:Q!
-:cs f g e1000_clean_rx_irq
-:$
 :w
-:q1
-:set nonu
+:22
+:2
+:11
+:$
+:52
+:62
+:74
+:73
+:29
+:75
+:76
 :1
-:set no nu
+:14
+:string
+:4
+:X
+:set nonu
 
 # Search String History (newest to oldest):
+?/Delay
+?/delay
+?/TestSimpleSpinLock
+?/Spin
+?/TestPthreadSpinLock
 ?/timeout
 ?/uuid
 ?/cmdline
@@ -36,142 +50,464 @@
 
 # Registers:
 "0	LINE	0
-	auto eth0
+	            limit_ = cursor.limit_;
 ""1	LINE	0
-	            pthread_wrapper.h 
+	    
 "2	LINE	0
-	public:
+	#include <stdlib.h>
 "3	LINE	0
-		}
+	            tmp = tmp + 1;           
 "4	LINE	0
-			::RW
+	            limit_ = cursor.limit_;
 "5	LINE	0
-		void RLock() {
+	            limit_ = cursor.limit_;
 "6	LINE	0
-	
+	            size_t tmp = cur_ + 1;
 "7	LINE	0
-	};
+	            mb();
 "8	LINE	0
-		}
+	            compile_barrier();
 "9	LINE	0
-			}
+	dd#define rmb() asm volatile ( "" ::: "memory" )
 "-	CHAR	0
 	 
 
 # File marks:
-'0  2  0  ~/code/mygithub/simple/locks/test/lockers.h
-'1  1  0  ~/code/mygithub/simple/locks/test/testlock.cpp
-'2  8  0  ~/code/mygithub/simple/locks/test/Makefile
-'3  2  0  ~/code/mygithub/simple/locks/test/Makefile
-'4  3  0  ~/code/mygithub/simple/locks/test/Makefile
-'5  4  0  ~/code/mygithub/simple/locks/test/Makefile
-'6  7  5  ~/code/mygithub/simple/locks/test/Makefile
-'7  5  15  ~/code/mygithub/simple/locks/test/Makefile
-'8  1  5  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
-'9  898  0  ~/code/kernel/linux/drivers/net/ethernet/intel/e1000e/netdev.c
+'0  1  1  ~/code/mygithub/simple/test.cpp
+'1  30  11  ~/code/mygithub/simple/locks/singleton.h
+'2  1  5  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
+'3  9  0  ~/code/mygithub/simple/locks/test/testsingle.cpp
+'4  10  13  ~/code/mygithub/simple/locks/test/testsingle.cpp
+'5  4  0  ~/code/mygithub/simple/locks/test/testsingle.cpp
+'6  16  0  ~/code/mygithub/simple/locks/singleton.h
+'7  13  16  ~/code/mygithub/simple/locks/singleton.h
+'8  26  16  ~/code/mygithub/simple/locks/singleton.h
+'9  12  12  ~/code/mygithub/simple/locks/singleton.h
 
 # Jumplist (newest first):
--'  2  0  ~/code/mygithub/simple/locks/test/lockers.h
+-'  1  1  ~/code/mygithub/simple/test.cpp
+-'  30  11  ~/code/mygithub/simple/locks/singleton.h
+-'  1  0  ~/code/mygithub/simple/locks/singleton.h
+-'  1  5  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
+-'  9  0  ~/code/mygithub/simple/locks/test/testsingle.cpp
+-'  1  0  ~/code/mygithub/simple/locks/test/testsingle.cpp
+-'  10  13  ~/code/mygithub/simple/locks/test/testsingle.cpp
+-'  4  0  ~/code/mygithub/simple/locks/test/testsingle.cpp
+-'  16  0  ~/code/mygithub/simple/locks/singleton.h
+-'  13  16  ~/code/mygithub/simple/locks/singleton.h
+-'  26  16  ~/code/mygithub/simple/locks/singleton.h
+-'  12  12  ~/code/mygithub/simple/locks/singleton.h
+-'  3  0  ~/code/mygithub/simple/locks/singleton.h
+-'  49  31  ~/code/mygithub/simple/locks/singleton.h
+-'  11  6  ~/code/mygithub/simple/locks/test/testsingle.cpp
+-'  53  0  ~/code/mygithub/simple/locks/singleton.h
+-'  23  0  ~/code/mygithub/simple/locks/test/random.h
+-'  1  0  ~/code/mygithub/simple/locks/test/random.h
+-'  24  21  ~/code/mygithub/simple/locks/test/random.h
+-'  16  0  ~/code/mygithub/simple/locks/test/testspsc.cpp
+-'  1  0  ~/code/mygithub/simple/locks/test/testspsc.cpp
+-'  21  0  ~/code/mygithub/simple/locks/test/testspsc.cpp
+-'  4  9  ~/code/mygithub/simple/locks/test/testspsc.cpp
+-'  27  21  ~/code/mygithub/simple/locks/test/testspsc.cpp
+-'  6  48  ~/code/mygithub/simple/locks/test/Makefile
+-'  1  0  ~/code/mygithub/simple/locks/test/Makefile
+-'  8  20  ~/code/mygithub/simple/locks/test/Makefile
+-'  8  0  ~/code/mygithub/simple/locks/test/random.h
+-'  27  0  ~/code/mygithub/simple/locks/test/random.h
+-'  92  16  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  106  12  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  100  16  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  1  0  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  10  44  ~/code/mygithub/simple/locks/test/Makefile
+-'  74  26  ~/code/mygithub/simple/locks/spsc.h
+-'  1  0  ~/code/mygithub/simple/locks/spsc.h
+-'  70  11  ~/code/mygithub/simple/locks/spsc.h
+-'  55  24  ~/code/mygithub/simple/locks/spsc.h
+-'  53  28  ~/code/mygithub/simple/locks/spsc.h
+-'  12  0  ~/code/mygithub/simple/locks/spsc.h
+-'  73  29  ~/code/mygithub/simple/locks/spsc.h
+-'  15  0  ~/code/mygithub/simple/locks/atomic.h
+-'  1  0  ~/code/mygithub/simple/locks/atomic.h
+-'  68  16  ~/code/mygithub/simple/locks/spsc.h
+-'  28  8  ~/code/mygithub/simple/locks/spsc.h
+-'  30  20  ~/code/mygithub/simple/locks/spsc.h
+-'  64  37  ~/code/mygithub/simple/locks/spsc.h
+-'  81  9  ~/code/mygithub/simple/locks/spsc.h
+-'  52  25  ~/code/mygithub/simple/locks/test/testspsc.cpp
+-'  63  31  ~/code/mygithub/simple/locks/spsc.h
+-'  57  0  ~/code/mygithub/simple/locks/spsc.h
+-'  26  18  ~/code/mygithub/simple/locks/spsc.h
+-'  32  0  ~/code/mygithub/simple/locks/spsc.h
+-'  75  24  ~/code/mygithub/simple/locks/spsc.h
+-'  92  0  ~/code/mygithub/simple/locks/spsc.h
+-'  79  0  ~/code/mygithub/simple/locks/spsc.h
+-'  65  59  ~/code/mygithub/simple/locks/spsc.h
+-'  66  16  ~/code/mygithub/simple/locks/test/testspsc.cpp
+-'  6  0  ~/code/mygithub/simple/locks/test/testspsc.cpp
+-'  43  4  ~/code/mygithub/simple/locks/test/testspsc.cpp
+-'  16  16  ~/code/mygithub/simple/locks/spsc.h
+-'  7  22  ~/code/mygithub/simple/locks/test/testspsc.cpp
+-'  57  3  ~/code/mygithub/simple/locks/test/testspsc.cpp
+-'  32  28  ~/code/mygithub/simple/locks/test/testspsc.cpp
+-'  13  0  ~/code/mygithub/simple/locks/spsc.h
+-'  8  0  ~/code/mygithub/simple/locks/spsc.h
+-'  82  0  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  9  0  ~/code/mygithub/simple/locks/spsc.h
+-'  27  0  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  22  5  ~/code/mygithub/simple/locks/test/testspsc.cpp
+-'  2  0  ~/code/mygithub/simple/locks/spsc.h
+-'  49  3  ~/code/mygithub/simple/locks/test/testspsc.cpp
+-'  3  0  ~/code/mygithub/simple/locks/spsc.h
+-'  12  6  ~/code/mygithub/simple/locks/test/testspsc.cpp
+-'  6  0  ~/code/mygithub/simple/locks/spsc.h
+-'  160  4  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  157  4  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  158  25  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  35  0  ~/code/mygithub/simple/locks/waiter.h
+-'  1  0  ~/code/mygithub/simple/locks/waiter.h
+-'  26  29  ~/code/mygithub/simple/locks/waiter.h
+-'  1  0  ~/code/mygithub/simple/locks/waiter
+-'  13  53  ~/code/mygithub/simple/locks/atomic.h
+-'  1  0  ~/code/mygithub/simple/spinlock.h
+-'  149  24  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  20  17  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  133  20  ~/code/mygithub/simple/locks/test/testlock.cpp
 -'  1  0  ~/code/mygithub/simple/locks/test/lockers.h
--'  1  0  ~/code/mygithub/simple/locks/test/testlock.cpp
--'  8  0  ~/code/mygithub/simple/locks/test/Makefile
--'  1  0  ~/code/mygithub/simple/locks/test/Makefile
--'  2  0  ~/code/mygithub/simple/locks/test/Makefile
--'  3  0  ~/code/mygithub/simple/locks/test/Makefile
--'  4  0  ~/code/mygithub/simple/locks/test/Makefile
--'  7  5  ~/code/mygithub/simple/locks/test/Makefile
--'  5  15  ~/code/mygithub/simple/locks/test/Makefile
--'  1  5  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
--'  898  0  ~/code/kernel/linux/drivers/net/ethernet/intel/e1000e/netdev.c
--'  4280  5  ~/code/kernel/linux/drivers/net/ethernet/intel/e1000/e1000_main.c
--'  103  0  ~/code/kernel/linux/arch/arc/include/asm/dma-mapping.h
--'  1  0  ~/code/kernel/linux/drivers/net/ethernet/intel/e1000e/netdev.c
--'  20  0  ~/.vimrc
--'  1  0  ~/.vimrc
--'  112  0  /etc/init.d/smbd
--'  1  0  /etc/init.d/smbd
--'  1  0  /etc/init.d/ssh
--'  1  0  /etc/init.d/rsync
--'  16  0  /etc/network/interfaces
--'  1  0  /etc/network/interfaces
--'  15  0  /etc/network/interfaces
--'  28  0  /etc/default/grub
--'  1  0  /etc/default/grub
--'  8  0  /etc/default/grub
--'  46  5  /etc/grub.d/30_os-prober
--'  1  0  /etc/grub.d/30_os-prober
--'  273  10  /etc/grub.d/30_os-prober
--'  1  0  /boot/grub/grub.cfg
--'  145  2  /boot/grub/grub.cfg
--'  61  6  /boot/grub/grub.cfg
--'  59  6  /boot/grub/grub.cfg
--'  146  16  /boot/grub/grub.cfg
--'  144  9  /boot/grub/grub.cfg
--'  56  0  /boot/grub/grub.cfg
--'  34  21  /etc/default/grub
--'  120  0  /boot/grub/grub.cfg
--'  52  26  /boot/grub/grub.cfg
--'  44  24  /boot/grub/grub.cfg
--'  138  25  /boot/grub/grub.cfg
--'  131  25  /boot/grub/grub.cfg
--'  115  25  /boot/grub/grub.cfg
--'  105  25  /boot/grub/grub.cfg
--'  147  10  /boot/grub/grub.cfg
--'  153  10  /boot/grub/grub.cfg
--'  149  10  /boot/grub/grub.cfg
--'  13  0  /boot/grub/grub.cfg
--'  1  0  /boot/grub/boot.cfg
--'  72  3  /etc/grub.d/10_linux
--'  1  0  /etc/grub.d/10_linux
--'  4  0  /etc/grub.d/41_custom
--'  1  0  /etc/grub.d/41_custom
--'  11  27  /etc/default/grub
--'  6  0  /boot/grub/grub.cfg
--'  25  0  /boot/grub/grub.cfg
--'  121  0  /boot/grub/grub.cfg
--'  43  0  /boot/grub/grub.cfg
--'  14  19  /etc/network/interfaces
--'  9  0  /etc/network/interfaces
--'  10  0  /etc/network/interfaces
--'  13  0  /etc/network/interfaces
--'  11  0  /etc/network/interfaces
--'  28  12  ~/code/mygithub/simple/locks/test/lockers.h
--'  1  0  ~/code/mygithub/simple/locks/test/testlock.h
--'  55  0  ~/code/mygithub/simple/locks/test/testlock.cpp
--'  96  5  ~/code/mygithub/simple/locks/test/testlock.cpp
--'  103  1  ~/code/mygithub/simple/locks/test/testlock.cpp
--'  2  0  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
--'  107  0  ~/code/mygithub/simple/locks/test/testlock.cpp
--'  108  0  ~/code/mygithub/simple/locks/test/testlock.cpp
--'  104  1  ~/code/mygithub/simple/locks/test/testlock.cpp
--'  109  0  ~/code/mygithub/simple/locks/test/testlock.cpp
--'  41  0  ~/code/mygithub/simple/locks/test/lockers.h
--'  42  0  ~/code/mygithub/simple/locks/test/lockers.h
--'  1  0  ~/code/mygithub/simple/locks/test/testlock.h
--'  1  5  ~/code/mygithub/simple/.git/COMMIT_EDITMSG
--'  898  0  ~/code/kernel/linux/drivers/net/ethernet/intel/e1000e/netdev.c
--'  4280  5  ~/code/kernel/linux/drivers/net/ethernet/intel/e1000/e1000_main.c
--'  103  0  ~/code/kernel/linux/arch/arc/include/asm/dma-mapping.h
--'  1  0  ~/code/kernel/linux/drivers/net/ethernet/intel/e1000e/netdev.c
--'  20  0  ~/.vimrc
--'  1  0  ~/.vimrc
--'  112  0  /etc/init.d/smbd
--'  1  0  /etc/init.d/smbd
--'  1  0  /etc/init.d/ssh
--'  1  0  /etc/init.d/rsync
--'  16  0  /etc/network/interfaces
--'  1  0  /etc/network/interfaces
--'  1  0  ~/code/mygithub/simple/locks/test/testlock.cpp
--'  8  0  ~/code/mygithub/simple/locks/test/Makefile
--'  1  0  ~/code/mygithub/simple/locks/test/Makefile
--'  2  0  ~/code/mygithub/simple/locks/test/Makefile
--'  3  0  ~/code/mygithub/simple/locks/test/Makefile
--'  4  0  ~/code/mygithub/simple/locks/test/Makefile
+-'  128  21  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  119  22  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  18  0  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  120  20  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  7  0  ~/code/mygithub/simple/locks/test/Makefile
+-'  131  0  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  29  4  ~/code/mygithub/simple/locks/test/Makefile
+-'  9  0  ~/code/mygithub/simple/locks/test/Makefile
+-'  2  0  ~/code/mygithub/simple/locks/test/testlock.cpp
+-'  136  0  ~/code/mygithub/simple/locks/test/testlock.cpp
 
 # History of marks within files (newest to oldest):
 
+> ~/code/mygithub/simple/test.cpp
+	"	1	1
+	^	1	2
+	.	1	1
+	+	1	1
+
+> ~/code/mygithub/simple/locks/singleton.h
+	"	30	11
+	^	16	0
+	.	16	7
+	+	26	22
+	+	47	0
+	+	49	31
+	+	12	12
+	+	26	17
+	+	13	0
+	+	16	0
+	+	13	0
+	+	14	11
+	+	16	7
+
+> ~/code/mygithub/simple/.git/COMMIT_EDITMSG
+	"	1	5
+	^	1	6
+	.	1	5
+	+	2	0
+	+	1	5
+
+> ~/code/mygithub/simple/locks/test/testsingle.cpp
+	"	9	0
+	^	9	25
+	.	11	0
+	+	1	25
+	+	11	0
+	+	10	25
+	+	11	4
+	+	10	56
+	+	7	12
+	+	2	16
+	+	6	22
+	+	2	18
+	+	7	0
+	+	9	12
+	+	3	16
+	+	5	19
+	+	3	17
+	+	10	13
+	+	9	3
+	+	11	0
+
+> ~/code/mygithub/simple/locks/test/random.h
+	"	23	0
+	^	24	22
+	.	23	0
+	+	26	1
+	+	23	26
+	+	24	21
+	+	23	0
+
+> ~/code/mygithub/simple/locks/test/testspsc.cpp
+	"	16	0
+	^	27	14
+	.	27	21
+	+	9	22
+	+	22	5
+	+	12	0
+	+	2	17
+	+	22	27
+	+	24	14
+	+	26	0
+	+	27	27
+	+	28	14
+	+	32	34
+	+	28	14
+	+	13	11
+	+	10	0
+	+	32	30
+	+	32	33
+	+	32	30
+	+	32	6
+	+	32	13
+	+	32	6
+	+	9	16
+	+	14	41
+	+	16	30
+	+	16	30
+	+	19	7
+	+	32	7
+	+	32	12
+	+	22	0
+	+	18	8
+	+	19	6
+	+	17	5
+	+	15	6
+	+	21	25
+	+	19	7
+	+	32	14
+	+	30	23
+	+	32	28
+	+	20	5
+	+	32	46
+	+	40	14
+	+	44	0
+	+	40	0
+	+	32	54
+	+	40	15
+	+	42	23
+	+	32	28
+	+	32	30
+	+	43	4
+	+	42	7
+	+	40	7
+	+	38	7
+	+	32	37
+	+	32	7
+	+	30	7
+	+	32	32
+	+	35	8
+	+	28	3
+	+	29	3
+	+	31	3
+	+	33	3
+	+	37	3
+	+	39	3
+	+	41	3
+	+	49	4
+	+	7	23
+	+	49	7
+	+	46	9
+	+	49	15
+	+	46	12
+	+	49	15
+	+	52	12
+	+	49	17
+	+	52	25
+	+	53	0
+	+	54	0
+	+	55	11
+	+	57	15
+	+	49	23
+	+	57	26
+	+	58	4
+	+	55	27
+	+	61	4
+	+	50	9
+	+	57	22
+	+	59	22
+	+	60	22
+	+	61	22
+	+	62	11
+	+	48	16
+	+	3	19
+	+	65	46
+	+	66	38
+	+	66	14
+	+	27	6
+	+	15	33
+	+	5	19
+	+	66	16
+	+	11	13
+	+	27	13
+	+	11	21
+	+	27	21
+
+> ~/code/mygithub/simple/locks/test/Makefile
+	"	6	48
+	^	6	49
+	.	6	48
+	+	29	0
+	+	23	0
+	+	22	41
+	+	2	42
+	+	4	0
+	+	2	39
+	+	23	8
+	+	29	20
+	+	2	37
+	+	23	10
+	+	2	22
+	+	23	36
+	+	4	0
+	+	9	44
+	+	9	0
+	+	12	0
+	+	14	37
+	+	20	22
+	+	29	3
+	+	6	40
+	+	8	5
+	+	9	0
+	+	8	11
+	+	29	4
+	+	4	0
+	+	2	0
+	+	29	5
+	+	24	0
+	+	26	0
+	+	25	3
+	+	26	15
+	+	25	52
+	+	8	13
+	+	6	48
+
+> ~/code/mygithub/simple/locks/test/testlock.cpp
+	"	92	16
+	^	157	5
+	.	82	0
+	+	22	0
+	+	93	0
+	+	17	17
+	+	18	17
+	+	53	51
+	+	19	18
+	+	31	0
+	+	80	14
+	+	89	19
+	+	73	0
+	+	29	0
+	+	34	17
+	+	166	17
+	+	173	0
+	+	166	0
+	+	174	15
+	+	175	18
+	+	176	4
+	+	173	51
+	+	135	0
+	+	135	5
+	+	135	3
+	+	135	18
+	+	135	4
+	+	152	0
+	+	165	0
+	+	135	0
+	+	119	22
+	+	146	0
+	+	145	21
+	+	154	23
+	+	132	23
+	+	128	21
+	+	129	13
+	+	133	20
+	+	20	17
+	+	149	24
+	+	164	24
+	+	162	25
+	+	158	25
+	+	157	4
+	+	160	0
+	+	82	0
+
+> ~/code/mygithub/simple/locks/spsc.h
+	"	74	26
+	^	74	27
+	.	74	26
+	+	1	0
+	+	16	20
+	+	42	18
+	+	16	20
+	+	42	18
+	+	23	27
+	+	32	17
+	+	16	16
+	+	65	19
+	+	49	46
+	+	50	19
+	+	65	0
+	+	78	8
+	+	79	8
+	+	75	9
+	+	80	0
+	+	76	7
+	+	75	24
+	+	49	27
+	+	50	17
+	+	64	23
+	+	65	24
+	+	63	19
+	+	64	17
+	+	63	31
+	+	64	37
+	+	30	0
+	+	73	12
+	+	73	11
+	+	73	12
+	+	74	11
+	+	73	29
+	+	69	31
+	+	70	12
+	+	69	25
+	+	53	0
+	+	54	35
+	+	54	0
+	+	59	0
+	+	59	0
+	+	70	25
+	+	69	33
+	+	70	0
+	+	74	26
+
+> ~/code/mygithub/simple/locks/atomic.h
+	"	15	0
+	^	15	0
+	.	13	58
+	+	13	53
+	+	15	49
+	+	17	0
+	+	13	58
+
+> ~/code/mygithub/simple/locks/waiter.h
+	"	35	0
+	.	26	29
+	+	26	29
+
+> ~/code/mygithub/simple/locks/waiter
+	"	1	0
+
+> ~/code/mygithub/simple/spinlock.h
+	"	1	0
+
 > ~/code/mygithub/simple/locks/test/lockers.h
-	"	2	0
+	"	1	0
 	^	20	32
 	.	28	11
 	+	9	0
@@ -206,28 +542,43 @@
 	+	30	21
 	+	28	11
 
-> ~/code/mygithub/simple/locks/test/testlock.cpp
-	"	1	0
-	.	94	0
-	+	18	0
-	+	94	0
+> ~/.vimrc
+	"	10	6
+	^	20	0
+	.	10	0
+	+	19	8
+	+	10	0
 
-> ~/code/mygithub/simple/locks/test/Makefile
-	"	8	0
-	^	7	6
-	.	3	0
-	+	8	0
-	+	5	0
-	+	4	41
-	+	2	42
-	+	3	0
+> ~/code/mygithub/something-to-save/.git/COMMIT_EDITMSG
+	"	1	5
+	^	1	6
+	.	1	5
+	+	1	5
 
-> ~/code/mygithub/simple/.git/COMMIT_EDITMSG
+> ~/code/mygithub/simple/README.md
+	"	4	13
+	^	4	22
+	.	4	21
+	+	4	21
+
+> ~/code/mygithub/linux-tools/.git/COMMIT_EDITMSG
 	"	1	5
 	^	1	6
 	.	1	5
 	+	2	0
 	+	1	5
+
+> ~/code/mygithub/linux-tools/README
+	"	1	23
+	^	1	24
+	.	1	23
+	+	1	23
+
+> ~/code/mygithub/something-to-save/README.md
+	"	1	0
+
+> ~/.pushmyconf.sh
+	"	4	9
 
 > ~/code/kernel/linux/drivers/net/ethernet/intel/e1000e/netdev.c
 	"	898	0
@@ -237,12 +588,6 @@
 
 > ~/code/kernel/linux/arch/arc/include/asm/dma-mapping.h
 	"	103	0
-
-> ~/.vimrc
-	"	20	0
-	^	20	0
-	.	19	8
-	+	19	8
 
 > /etc/init.d/smbd
 	"	112	0
